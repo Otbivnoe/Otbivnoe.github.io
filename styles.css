@@ -1,0 +1,30 @@
+.container {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 320px;
+	margin-top: -300px; 
+	margin-left: -160px; 
+}
+
+.centerImage {
+	object-fit: cover;
+	border-radius: 50%;
+	width: 320px;
+	height: 320px;
+}
+
+a:link {
+    color: black;
+    /*text-decoration: none;*/
+}
+a:visited {
+    color: black;
+    background-color: transp/*arent;
+    text-decoration: none;*/
+}
+a:hover {
+    color: black;
+    /*background-color: transparent;*/
+    /*text-decoration: underline;*/
+}
