@@ -16,15 +16,13 @@
 
 a:link {
     color: black;
-    /*text-decoration: none;*/
 }
+
 a:visited {
     color: black;
-    background-color: transp/*arent;
-    text-decoration: none;*/
+    background-color: transp;
 }
+
 a:hover {
     color: black;
-    /*background-color: transparent;*/
-    /*text-decoration: underline;*/
 }
