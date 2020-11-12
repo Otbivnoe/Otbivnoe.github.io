@@ -1,0 +1,147 @@
+body {
+	font-family: "Montserrat", sans-serif;
+	background-color: white;
+	margin: 0;
+}
+
+/* Sidebar */
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 400px;  
+}
+
+.background {
+  height: auto;
+	left: 0px;
+  bottom: 0px;
+}
+
+/* Sidebar Personal Info */
+
+.sidebar__personal-info {
+  position: relative;
+  width: 100%;
+  top: 80px;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.sidebar__avatar {
+  width: 100px;
+  height: 100px;
+}
+
+.sidebar__name {
+  font-size: 1.25rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.9);
+}
+
+.sidebar__description {
+  font-size: 1rem;
+  line-height: 1.21875rem;
+  font-weight: 300;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+/* Sidebar Navigation */
+
+.sidebar__nav {
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+}
+
+.sidebar__nav-item {
+  font-weight: 400;
+  text-decoration: none;
+  font-size: 1.5625rem;
+  line-height: 1.75rem;
+  display: block;
+  color: #000000;
+}
+
+.sidebar__nav-item + .sidebar__nav-item {
+  margin-top: 2rem;
+}
+
+.sidebar__nav-item:hover, .sidebar__nav-item:focus {
+  color: #e23c2b;
+}
+
+.sidebar__nav-item.selected {
+  font-weight: 700;
+}
+
+/* Sidebar Social */
+
+.sidebar__social-container {
+  position: absolute;
+  width: 100%;
+  bottom: 40px;
+  display: flex;
+  justify-content: center;
+}
+
+.sidebar__social-item {
+  height: 24px;
+  width: 24px;
+}
+
+.sidebar__social-item + .sidebar__social-item {
+  padding-left: 16px;
+}
+
+.sidebar__social-item:hover {
+  opacity: 0.8;
+}
+
+.sidebar__social-item img {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+/* .main {
+  margin-left: 400px;
+}
+
+.article_date {
+  position: relative;
+  left: 32px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 12px;
+  line-height: 14px;
+  color: #000000;
+}
+
+.article_title {
+  position: relative;
+  margin: 0px 32px;
+  top: 16px;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 24px;
+  color: #000000;
+}
+
+.article_description {
+  position: relative;
+  top: 12px;
+  margin: 0px 32px;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  color: #000000;
+  opacity: 0.7;
+} */
