@@ -90,7 +90,8 @@ body {
 }
 
 .sidebar__nav-item.selected {
-	font-weight: 700;
+  font-weight: 700;
+  color: #e23c2b;
 }
 
 /* Sidebar Social */
