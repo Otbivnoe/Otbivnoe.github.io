@@ -6,7 +6,7 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="preconnect" href="https://fonts.gstatic.com" />
 		<link
 			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
@@ -21,15 +21,15 @@
 			<img src="/assets/images/side menu/bg.png" class="sidebar__background" alt="Me looking at the sea">
 
 			<div class="sidebar__personal-info">
-				<img src="/assets/images/side menu/avatar.png" class="sidebar__avatar" alt="Avatar">
+				<img src="/assets/images/side menu/avatar.png" class="avatar" alt="Avatar">
 				<p class="sidebar__name">Nikita Ermolenko</p>
 				<p class="sidebar__description">iOS Developer<br>ex-Yandex</p>
 			</div>	
 
 			<nav class="sidebar__nav">	
-					<a class="sidebar__nav-item selected" href="#contact">Blog</a>
-					<a class="sidebar__nav-item" href="#about">About</a>
-					<a class="sidebar__nav-item" href="#contact">Contact</a>
+				<a class="sidebar__nav-item selected" href="#contact">Blog</a>
+				<a class="sidebar__nav-item" href="#about">About</a>
+				<a class="sidebar__nav-item" href="#contact">Contact</a>
 			</nav>
 
 			<div class="sidebar__social-container">
@@ -40,11 +40,18 @@
 				<a class="sidebar__social-item" href="#contact"><img src="/assets/images/side menu/soul.png"></a>
 			</div>
 		</aside>
-		<div class="main">
-			
-
+		<div class="main">		
 			<div class="main__content">			
+				<div class="main__avatar-container">
+					<img src="/assets/images/side menu/avatar.png" class="avatar" alt="Avatar">				
+				</div>
 				<img class="main__logo" src="/assets/images/logo.svg" alt="site's logo">
+
+				<nav class="sidebar__nav--mobile">	
+					<a class="sidebar__nav-item selected" href="#contact">Blog</a>
+					<a class="sidebar__nav-item" href="#about">About</a>
+					<a class="sidebar__nav-item" href="#contact">Contact</a>
+				</nav>
 
 				{% for post in site.posts | sort: "date" %}
 				<article class ="article">
