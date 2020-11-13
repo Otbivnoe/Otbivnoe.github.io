@@ -1,7 +1,8 @@
 ---
 layout: post
-title:  "Let’s Simplify the Work with UserDefaults"
-date:   2018-03-16 15:47:12 +0300 
+title:    "Let’s Simplify the Work with UserDefaults"
+subtitle: "Everyone has worked with *UserDefaults* in order to store some simple data and knows that working with that storage is easy as it can be. But today I’m going to improve the interaction with it a bit though!"
+date:     2018-03-16 15:47:12 +0300 
 ---
 
 ![userdefaults](/assets/images/userdefaults.png)

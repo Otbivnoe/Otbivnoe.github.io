@@ -16,9 +16,10 @@
 		<link rel="stylesheet" href="style.css" />
 	</head>
 
-	<body>
-		<img src="/assets/images/side menu/bg.png" class="sidebar background" alt="Me looking at the sea">
+	<body>		
 		<aside class="sidebar">	
+			<img src="/assets/images/side menu/bg.png" class="sidebar__background" alt="Me looking at the sea">
+
 			<div class="sidebar__personal-info">
 				<img src="/assets/images/side menu/avatar.png" class="sidebar__avatar" alt="Avatar">
 				<p class="sidebar__name">Nikita Ermolenko</p>
@@ -26,15 +27,9 @@
 			</div>	
 
 			<nav class="sidebar__nav">	
-				<div>
-					<!-- <div><a class="sidebar__nav-item selected" href="#contact">Blog</a></div>
-					<div><a class="sidebar__nav-item" href="#about">About</a></div>
-					<div><a class="sidebar__nav-item" href="#contact">Contact</a></div> -->
-
 					<a class="sidebar__nav-item selected" href="#contact">Blog</a>
 					<a class="sidebar__nav-item" href="#about">About</a>
 					<a class="sidebar__nav-item" href="#contact">Contact</a>
-				</div>					
 			</nav>
 
 			<div class="sidebar__social-container">
@@ -45,5 +40,20 @@
 				<a class="sidebar__social-item" href="#contact"><img src="/assets/images/side menu/soul.png"></a>
 			</div>
 		</aside>
+		<div class="main">
+			
+
+			<div class="main__content">			
+				<img class="main__logo" src="/assets/images/logo.svg" alt="site's logo">
+
+				{% for post in site.posts | sort: "date" %}
+				<article class ="article">
+					<p class="article-date">{{ post.date | date_to_long_string }}</p>
+					<h1 class="article-title">{{ post.title }}</h1>
+					<p class="article-description">{{ post.subtitle }}</h1>
+				</article>
+				{% endfor %}
+			</div>
+		</div>
 	</body>
 </html>
