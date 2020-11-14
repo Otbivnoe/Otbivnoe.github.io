@@ -125,7 +125,6 @@ body {
 /* Main */
 
 .main {
-	position: absolute;
 	margin-left: 400px;
 }
 
@@ -136,6 +135,7 @@ body {
 }
 
 .main__content {
+	position: absolute;
 	max-width: 1000px;
 	padding-left: 15%;
 	padding-right: 15%;

@@ -6,7 +6,6 @@ layout: default
 <div class="main__avatar-container">
 	<img src="/assets/img/side-menu/avatar.png" class="avatar" alt="Avatar">				
 </div>
-<img class="main__logo" src="/assets/img/logo.svg" alt="site's logo">
 
 <nav class="sidebar__nav--mobile">	
 	<a class="sidebar__nav-item selected" href="#contact">Blog</a>
