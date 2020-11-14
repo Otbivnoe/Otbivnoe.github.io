@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+			rel="stylesheet"
+        />
+        <title>{{ page.title }}</title>
+		<link rel="icon" href="assets/img/favicon.ico" />
+		<link rel="stylesheet" href="/assets/css/style.css" />
+	</head>
+
+	<body>		
+		<aside class="sidebar">	
+			<img src="/assets/img/side-menu/bg.png" class="sidebar__background" alt="Me looking at the sea">
+
+			<div class="sidebar__personal-info">
+				<img src="/assets/img/side-menu/avatar.png" class="avatar" alt="Avatar">
+				<p class="sidebar__name">Nikita Ermolenko</p>
+				<p class="sidebar__description">iOS Developer<br>ex-Yandex</p>
+			</div>	
+
+			<nav class="sidebar__nav">	
+                {% for item in site.data.tabs %}
+				<a class="sidebar__nav-item" href= {{ item.link }}>{{ item.name }} </a>
+                {% endfor %}
+			</nav>
+
+			<div class="sidebar__social-container">
+                {% for item in site.data.social %}
+                <a class="sidebar__social-item" href={{ item.link }}><img src={{ item.img }}></a>
+                {% endfor %}				
+			</div>
+		</aside>
+		<div class="main">		
+            <div class="main__content">
+                {{ content }}
+            </div>
+		</div>
+	</body>
+</html>

@@ -7,8 +7,8 @@ body {
 /* Sidebar */
 
 .sidebar {
-  position: fixed;
-  background: #F4F4F4FF;
+	position: fixed;
+	background: #f4f4f4ff;
 	height: 100%;
 	width: 400px;
 }
@@ -67,8 +67,8 @@ body {
 }
 
 .sidebar__nav--mobile {
-  display: none;
-  margin-bottom: 22px;
+	display: none;
+	margin-bottom: 22px;
 }
 
 .sidebar__nav-item {
@@ -90,8 +90,8 @@ body {
 }
 
 .sidebar__nav-item.selected {
-  font-weight: 700;
-  color: #e23c2b;
+	font-weight: 700;
+	color: #e23c2b;
 }
 
 /* Sidebar Social */
@@ -125,11 +125,12 @@ body {
 /* Main */
 
 .main {
+	position: absolute;
 	margin-left: 400px;
 }
 
 .main__logo {
-	margin-top: 100px;
+	margin-top: 70px;
 	margin-bottom: 20px;
 	margin-left: -30px;
 }
@@ -143,7 +144,7 @@ body {
 }
 
 .main__avatar-container {
-  display: none;
+	display: none;
 }
 
 /* Article */
@@ -163,7 +164,7 @@ body {
 }
 
 .article-date {
-  margin-top: 0px;
+	margin-top: 0px;
 	margin-bottom: 0px;
 	font-weight: 300;
 	font-size: 0.75rem;
@@ -186,8 +187,8 @@ body {
 	font-size: 1rem;
 	line-height: 1.5rem;
 	color: #000000;
-  opacity: 0.7;
-  margin-bottom: 0px;
+	opacity: 0.7;
+	margin-bottom: 0px;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
 	-webkit-box-orient: vertical;
@@ -197,43 +198,43 @@ body {
 /* Media */
 
 @media (max-width: 800px) {
-  .sidebar {
-    display: none;
-  }
+	.sidebar {
+		display: none;
+	}
 
-  .main {
-    margin-left: auto;
-  }
+	.main {
+		margin-left: auto;
+	}
 
-  .main__content {
-    max-width: auto;
-    padding-left: 20px;
-    padding-right: 20px;
-  }
+	.main__content {
+		max-width: auto;
+		padding-left: 20px;
+		padding-right: 20px;
+	}
 
-  .main__logo {
-    display: none;
-  }
+	.main__logo {
+		display: none;
+	}
 
-  .sidebar__nav--mobile {
-    display: flex;
-    justify-content: center;
-  }
+	.sidebar__nav--mobile {
+		display: flex;
+		justify-content: center;
+	}
 
-  .sidebar__nav-item {
-    font-size: 1rem;
-    line-height: 1.21875rem;
-  }
+	.sidebar__nav-item {
+		font-size: 1rem;
+		line-height: 1.21875rem;
+	}
 
-  .sidebar__nav-item + .sidebar__nav-item {
-    margin-left: 24px;
-    margin-top: 0rem;
-  }
+	.sidebar__nav-item + .sidebar__nav-item {
+		margin-left: 24px;
+		margin-top: 0rem;
+	}
 
-  .main__avatar-container {
-    display: block;
-    margin-top: 32px;
-    margin-bottom: 25px;
-    text-align: center;
-  }
+	.main__avatar-container {
+		display: block;
+		margin-top: 32px;
+		margin-bottom: 25px;
+		text-align: center;
+	}
 }
