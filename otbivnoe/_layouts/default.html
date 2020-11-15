@@ -26,9 +26,7 @@
 			</div>	
 
 			<nav class="sidebar__nav">	
-                {% for item in site.data.tabs %}
-				<a class="sidebar__nav-item" href= {{ item.link }}>{{ item.name }} </a>
-                {% endfor %}
+                {% include nav_items.html %}
 			</nav>
 
 			<div class="sidebar__social-container">
@@ -43,7 +41,14 @@
                     <source class="main__logo" media="(prefers-color-scheme: dark)" srcset="/assets/img/logo-dark.svg">
                     <img class="main__logo" srcset="/assets/img/logo.svg" alt="site's logo">
                 </picture>
+
+                <div class="main__avatar-container">
+                    <img src="/assets/img/side-menu/avatar.png" class="avatar" alt="Avatar">				
+                </div>
                 
+                <nav class="sidebar__nav--mobile">	
+                    {% include nav_items.html %}
+                </nav>
                 {{ content }}
             </div>
 		</div>

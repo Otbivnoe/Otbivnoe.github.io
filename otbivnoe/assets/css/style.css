@@ -134,8 +134,8 @@ body {
 .main__content {
 	position: absolute;
 	max-width: 1000px;
-	padding-left: 15%;
-	padding-right: 15%;
+	padding-left: 12%;
+	padding-right: 12%;
 	margin-left: auto;
 	margin-right: auto;
 }
@@ -205,8 +205,9 @@ body {
 
 	.main__content {
 		max-width: auto;
-		padding-left: 20px;
-		padding-right: 20px;
+		width: 94%;
+		padding-left: 3%;
+		padding-right: 3%;
 	}
 
 	.main__logo {
@@ -219,6 +220,7 @@ body {
 	}
 
 	.sidebar__nav-item {
+		font-weight: 300;
 		font-size: 1rem;
 		line-height: 1.21875rem;
 	}

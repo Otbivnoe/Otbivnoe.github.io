@@ -1,0 +1,6 @@
+{% for tab in site.data.tabs %}
+    <a 
+    class="sidebar__nav-item {% if tab.link == page.url %}selected{% endif %}" 
+    href= {{ tab.link }}>{{ tab.name }}
+    </a>
+{% endfor %}

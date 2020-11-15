@@ -2,7 +2,7 @@
   link: /
 
 - name: About
-  link: /tabs/about
+  link: /tabs/about.html
 
 - name: Contact
-  link: /tabs/contact
+  link: /tabs/contact.html
