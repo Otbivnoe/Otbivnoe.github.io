@@ -1,14 +1,14 @@
-- img:  /assets/img/side-menu/twitter.png
+- img:  /assets/img/side-menu/social/twitter.png
   link: https://twitter.com/iOtbivnoe
 
-- img:  /assets/img/side-menu/stackoverflow.png
+- img:  /assets/img/side-menu/social/stackoverflow.png
   link: https://stackoverflow.com/users/3733734/nikita-ermolenko
 
-- img:  /assets/img/side-menu/github.png
+- img:  /assets/img/side-menu/social/github.png
   link: https://github.com/otbivnoe
 
-- img:  /assets/img/side-menu/rss.png
+- img:  /assets/img/side-menu/social/rss.png
   link: #contact  
 
-- img:  /assets/img/side-menu/soul.png
+- img:  /assets/img/side-menu/social/soul.png
   link: #contact  
