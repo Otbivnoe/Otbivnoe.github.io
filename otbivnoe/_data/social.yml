@@ -8,7 +8,7 @@
   link: https://github.com/otbivnoe
 
 - img:  /assets/img/side-menu/social/rss.png
-  link: #contact  
+  link: /feed.xml
 
 - img:  /assets/img/side-menu/social/soul.png
-  link: #contact  
+  link: https://t.me/readaggregator
