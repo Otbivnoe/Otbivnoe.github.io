@@ -85,13 +85,10 @@ body {
 }
 
 .sidebar__nav-item:hover,
-.sidebar__nav-item:focus {
-	color: #e23c2b;
-}
-
+.sidebar__nav-item:focus,
 .sidebar__nav-item.selected {
 	font-weight: 700;
-	color: #e23c2b;
+	color: #D12929;
 }
 
 /* Sidebar Social */
@@ -131,7 +128,7 @@ body {
 .main__logo {
 	margin-top: 70px;
 	margin-bottom: 20px;
-	margin-left: -30px;
+	margin-left: -15px;
 }
 
 .main__content {
@@ -236,5 +233,31 @@ body {
 		margin-top: 32px;
 		margin-bottom: 25px;
 		text-align: center;
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background-color:#141414FF;
+	}
+
+	.article {
+		background: #222222FF;
+	}
+
+	.article-date, .article-description, .article-title {
+		color: white;
+	}
+
+	.sidebar {
+		background: #494949;
+	}
+
+	.sidebar__nav-item, .sidebar__name {
+		color: white;
+	}
+
+	.sidebar__description {
+		color: #FFFFFFCC;
 	}
 }

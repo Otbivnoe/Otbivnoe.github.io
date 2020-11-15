@@ -14,7 +14,10 @@
 
 	<body>		
 		<aside class="sidebar">	
-			<img src="/assets/img/side-menu/bg.png" class="sidebar__background" alt="Me looking at the sea">
+            <picture>
+                <source class="sidebar__background" media="(prefers-color-scheme: dark)" srcset="/assets/img/side-menu/bg-dark.png">
+                <img class="sidebar__background" srcset="/assets/img/side-menu/bg.png" alt="Me looking at the sea">
+            </picture>
 
 			<div class="sidebar__personal-info">
 				<img src="/assets/img/side-menu/avatar.png" class="avatar" alt="Avatar">
@@ -35,8 +38,12 @@
 			</div>
 		</aside>
 		<div class="main">		
-            <div class="main__content">
-                <img class="main__logo" src="/assets/img/logo.svg" alt="site's logo">              
+            <div class="main__content">            
+                <picture>
+                    <source class="main__logo" media="(prefers-color-scheme: dark)" srcset="/assets/img/logo-dark.svg">
+                    <img class="main__logo" srcset="/assets/img/logo.svg" alt="site's logo">
+                </picture>
+                
                 {{ content }}
             </div>
 		</div>
