@@ -1,11 +1,11 @@
 ---
-layout: post
+layout:   default
 title:     "A Flexible Routing Approach in an iOS App"
 subtitle:  "At Rosberry we've given up on using storyboards, except the Launch Screen, of course, and configure all layout and transition logic in code. In order to understand our reasons - read the Life without Interface Builder written by 's team, I hope you will find this post useful."
 date:       "2018-02-01 15:47:12 +0300"
 ---
 
-![routing](/assets/images/routing.jpeg)
+![routing](/assets/img/articles/routing.jpeg)
 
 At Rosberry we've given up on using storyboards, except the Launch Screen, of course, and configure all layout and transition logic in code. In order to understand our reasons - read the Life without Interface Builder written by 's team, I hope you will find this post useful.
 In this article, I'm going to introduce a new approach to routing between view controllers. We'll start with a problem and step by step will come to a final decision. Enjoy reading!
@@ -25,6 +25,7 @@ extension UIViewController {
     }
 }
 ```
+
 and it works as needed — write once, then reuse. But it’ll become messy when many transitions come. Xcode autocompletion doesn’t work well I know, but sometimes it can show you a lot of unnecessary methods. Even if you don’t want to show a profile from this screen, it’ll be there. So, go further and try to improve this one.
 
 

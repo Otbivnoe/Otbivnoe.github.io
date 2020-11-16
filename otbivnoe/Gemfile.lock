@@ -72,6 +72,7 @@ DEPENDENCIES
   jekyll (~> 4.1.1)
   jekyll-feed
   minima (~> 2.5)
+  rouge
   tzinfo (~> 1.2)
   tzinfo-data
   wdm (~> 0.1.1)
