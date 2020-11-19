@@ -1,11 +1,10 @@
 ---
-layout:   default
+layout:   post
 title:    "Let’s Simplify the Work with UserDefaults"
 subtitle: "Everyone has worked with UserDefaults in order to store some simple data and knows that working with that storage is easy as it can be. But today I’m going to improve the interaction with it a bit though!"
 date:     "2018-03-16 15:47:12 +0300"
+img:      /assets/img/articles/userdefaults.png
 ---
-
-![userdefaults](/assets/img/articles/userdefaults.png)
 
 Everyone has worked with *UserDefaults* in order to store some simple data and knows that working with that storage is easy as it can be. But today I’m going to improve the interaction with it a bit though! Let’s start with the most obvious solution and implement something new and elegant. 😌
 

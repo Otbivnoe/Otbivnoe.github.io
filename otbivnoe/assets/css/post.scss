@@ -1,0 +1,77 @@
+---
+# The style for a signle post page
+---
+
+@import "colors";
+
+.post-logo {
+	border-radius: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: $post-header--light;
+}
+
+h1 {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+p {
+	font-size: 1em;
+	line-height: 1.6em;
+	color: $post-text--light;
+}
+
+h2 {
+	margin-top: 1em;
+	margin-bottom: 0.5em;
+}
+
+a {
+	text-decoration: underline;
+	color: $post-link--light;	
+}
+
+ul, ol {
+	padding-left: 30px;
+}
+
+li {
+	margin: 0.2em 0 0 0em;
+	padding: 0px;
+	color: $post-text--light;
+}
+
+table.text th,
+table.text td {
+	vertical-align: top;
+	border-top: 1px solid #ccc;
+	padding: 5px;
+}
+
+p > code {
+	background: $post-code-background--light;
+	color: $post-code--light;
+}
+
+@media (prefers-color-scheme: dark) {
+
+	h1, h2, h3, h4, h5, h6 {
+		color: $post-header--dark;
+	}
+
+	li, p {
+		color: $post-text--dark;
+	}
+
+	a {
+		text-decoration: underline;
+		color: $post-link--dark;
+	}
+
+	p > code {
+		background: $post-code-background--dark;
+		color: $post-code--dark;
+	}
+}

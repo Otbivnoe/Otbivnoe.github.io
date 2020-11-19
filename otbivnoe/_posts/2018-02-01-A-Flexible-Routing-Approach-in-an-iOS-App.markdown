@@ -1,11 +1,10 @@
 ---
-layout:   default
+layout:   post
 title:     "A Flexible Routing Approach in an iOS App"
 subtitle:  "At Rosberry we've given up on using storyboards, except the Launch Screen, of course, and configure all layout and transition logic in code. In order to understand our reasons - read the Life without Interface Builder written by 's team, I hope you will find this post useful."
-date:       "2018-02-01 15:47:12 +0300"
+date:      "2018-02-01 15:47:12 +0300"
+img:       /assets/img/articles/routing.jpeg
 ---
-
-![routing](/assets/img/articles/routing.jpeg)
 
 At Rosberry we've given up on using storyboards, except the Launch Screen, of course, and configure all layout and transition logic in code. In order to understand our reasons - read the Life without Interface Builder written by 's team, I hope you will find this post useful.
 In this article, I'm going to introduce a new approach to routing between view controllers. We'll start with a problem and step by step will come to a final decision. Enjoy reading!

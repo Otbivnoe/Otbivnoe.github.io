@@ -33,6 +33,10 @@ github_username:  otbivnoe
 plugins:
   - jekyll-feed
 
+sass:
+  sass_dir: /assets/css
+  style: compressed
+
 markdown: kramdown
 kramdown:
   input: GFM

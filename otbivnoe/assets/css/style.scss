@@ -1,6 +1,8 @@
-:root {
-	--red-color: #d12929;
-}
+---
+# The default style for layout Page
+---
+
+@import "colors";
 
 img {
     width: 100%;
@@ -10,7 +12,7 @@ img {
 
 body {
 	font-family: "Montserrat", sans-serif;
-	background-color: white;
+	background-color: $content-background-color--light;
 	margin: 0;
 }
 
@@ -18,9 +20,7 @@ body {
 
 .sidebar {
 	position: fixed;
-	background: #f4f4f4ff;
-	/* height: 100%; */
-	/* height: 100vh; */
+	background: $sidebar-background--light;
 	top: 0;
 	left: 0;
 	height: 100%;
@@ -57,7 +57,7 @@ body {
 	font-size: 1.25rem;
 	line-height: 1.5rem;
 	font-weight: 700;
-	color: rgba(0, 0, 0, 0.9);
+	color: $sidebar-name--light;
 }
 
 .sidebar__description {
@@ -65,7 +65,7 @@ body {
 	font-size: 1rem;
 	line-height: 1.21875rem;
 	font-weight: 300;
-	color: rgba(0, 0, 0, 0.5);
+	color: $sidebar-description--light;
 }
 
 /* Sidebar Navigation */
@@ -91,7 +91,7 @@ body {
 	font-size: 1.5625rem;
 	line-height: 1.75rem;
 	display: block;
-	color: #000000;
+	color: $sidebar-nav-item--light;
 }
 
 .sidebar__nav-item + .sidebar__nav-item {
@@ -100,12 +100,12 @@ body {
 
 .sidebar__nav-item:hover,
 .sidebar__nav-item:focus {
-	color: var(--red-color);
+	color: $red-color;
 }
 
 .sidebar__nav-item.selected {
 	font-weight: 700;
-	color: var(--red-color);
+	color: $red-color;
 }
 
 /* Sidebar Social */
@@ -145,9 +145,9 @@ body {
 
 .main__content {
 	max-width: 1000px;
-	padding-left: 12%;
-	padding-right: 12%;
-	padding-bottom: 10px;
+	padding-left: 20%;
+	padding-right: 20%;
+	padding-bottom: 30px;
 	margin-left: auto;
 	margin-right: auto;	
 }
@@ -156,8 +156,8 @@ body {
 	margin-top: 70px;
 	margin-bottom: 20px;
 	margin-left: -15px;
-	width: auto;
-	height: auto;
+	width: 308px;
+	height: 85px;
 }
 
 .main__avatar-container {
@@ -167,8 +167,8 @@ body {
 /* Article */
 
 .article {
-	background: #ffffff;
-	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.09);
+	background: $article-background--light;
+	box-shadow: 0px 4px 15px $article-shadow--light;
 	border-radius: 20px;
 	padding-top: 24px;
 	padding-bottom: 24px;
@@ -176,12 +176,12 @@ body {
 	padding-left: 32px;
 }
 
-.article:hover > .article-title > a {
-	color: var(--red-color);
+.article > .article-title > a:hover {
+	color: $red-color;
 }
 
 .article:hover {
-	box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.13);
+	box-shadow: 0px 4px 15px $article-shadow-hover--light;
 }
 
 .article + .article {
@@ -194,7 +194,7 @@ body {
 	font-weight: 300;
 	font-size: 0.75rem;
 	line-height: 0.875rem;
-	color: #000000;
+	color: $article-date--light;
 }
 
 .article-title {
@@ -207,7 +207,7 @@ body {
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 1.5rem;
-	color: #000000;	
+	color: $article-title--light;	
 }
 
 .article-description {
@@ -215,8 +215,7 @@ body {
 	font-weight: 300;
 	font-size: 1rem;
 	line-height: 1.5rem;
-	color: #000000;
-	opacity: 0.7;
+	color: $article-description--light;
 	margin-bottom: 0px;
 	display: -webkit-box;
 	-webkit-line-clamp: 3;
@@ -273,28 +272,38 @@ body {
 
 @media (prefers-color-scheme: dark) {
 	body {
-		background-color: #141414ff;
+		background-color: $content-background-color--dark;
 	}
 
 	.article {
-		background: #222222ff;
+		background: $article-background--dark;
 	}
 
-	.article-date,
-	.article-description,
-	.article-title {
-		color: white;
+	.article-date {
+		color: $article-date--dark;
+	}
+
+	.article-description {
+		color: $article-description--dark;
+	}
+	
+	.article-title > a {
+		color: $article-title--dark;
 	}
 
 	.sidebar {
-		background: #494949;
+		background: $sidebar-background--dark;
 	}
 
-	.sidebar__nav-item, .sidebar__name {
-		color: white;
+	.sidebar__name {
+		color: $sidebar-name--dark;
 	}
 
 	.sidebar__description {
-		color: #ffffffcc;
+		color: $sidebar-description--dark;
+	}
+
+	.sidebar__nav-item {
+		color: $sidebar-nav-item--dark;
 	}
 }
