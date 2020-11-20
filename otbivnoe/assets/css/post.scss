@@ -4,42 +4,64 @@
 
 @import "colors";
 
+
 .post-logo {
 	border-radius: 20px;
 }
 
-h1, h2, h3, h4, h5, h6 {
+.post-title {
+	margin-top: 0px;
+	margin-bottom: 35px;
+}
+
+.post-date {
+	margin-bottom: 10px;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
 	color: $post-header--light;
 }
 
-h1 {
-	margin-top: 0.5em;
-	margin-bottom: 0.5em;
+h2 {
+	margin-top: 2rem;
+	margin-bottom: 0.5rem;
+}
+
+h3 {
+	margin-top: 1.7rem;
+	margin-bottom: 0.2rem;
 }
 
 p {
-	font-size: 1em;
-	line-height: 1.6em;
+	font-size: 1rem;	
 	color: $post-text--light;
 }
 
-h2 {
-	margin-top: 1em;
-	margin-bottom: 0.5em;
+p, li {
+	line-height: 1.6rem;
 }
 
 a {
-	text-decoration: underline;
-	color: $post-link--light;	
+	color: $red-color;
+	text-decoration: none;
 }
 
-ul, ol {
-	padding-left: 30px;
+a:hover {
+	text-decoration: underline;
+}
+
+ul,
+ol {
+	padding-left: 18px;
 }
 
 li {
-	margin: 0.2em 0 0 0em;
-	padding: 0px;
+	margin: 0.2rem 0 0 0rem;
 	color: $post-text--light;
 }
 
@@ -53,25 +75,44 @@ table.text td {
 p > code {
 	background: $post-code-background--light;
 	color: $post-code--light;
+	font-family: inherit;
+}
+
+hr {
+	margin-top: 20px;
+	margin-bottom: 20px;
+	text-align: center;
+	border: none;
+}
+
+hr::after {
+	content: "\2022\2022\2022";
+	letter-spacing: 12px;
+	color: $post-text--light;
 }
 
 @media (prefers-color-scheme: dark) {
-
-	h1, h2, h3, h4, h5, h6 {
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
 		color: $post-header--dark;
 	}
 
-	li, p {
+	li,
+	p {
 		color: $post-text--dark;
 	}
 
-	a {
-		text-decoration: underline;
-		color: $post-link--dark;
-	}
-
-	p > code {
+	p > code,
+	em > code {
 		background: $post-code-background--dark;
 		color: $post-code--dark;
+	}
+
+	hr::after {
+		color: $post-text--dark;
 	}
 }

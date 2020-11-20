@@ -2,8 +2,13 @@
 layout:   default
 ---
 
-<h1>{{ page.title }}</h1>
-<p>{{ page.date | date_to_long_string }}</p>
-<img class="post-logo" src={{ page.img }} alt="">
+<p class="post-date">{{ page.date | date_to_long_string }}</p>
+<h1 class="post-title">{{ page.title }}</h1>
+
+{% if page.img != nil %}
+<img class="post-logo" src={{ page.img }} alt="just a post's logo">
+{% endif %}
 
 {{ content }}
+
+{% include readaggregator_footer.html %}

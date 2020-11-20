@@ -2,7 +2,7 @@
 layout:   post
 title:    "Let’s Simplify the Work with UserDefaults"
 subtitle: "Everyone has worked with UserDefaults in order to store some simple data and knows that working with that storage is easy as it can be. But today I’m going to improve the interaction with it a bit though!"
-date:     "2018-03-16 15:47:12 +0300"
+date:     "2018-03-16"
 img:      /assets/img/articles/userdefaults.png
 ---
 
@@ -141,6 +141,6 @@ class SettingsService {
 
 Ready for production! Please, be aware that this extension is only applied for enums with *RawRepresentable* presentation.
 
-I hope you enjoyed my extensions! If you know any ways of improving it — let me know! There’s a [final extension](https://gist.github.com/Otbivnoe/04b8bd7984fba0cb58ca7f136fd95582) on UserDefaults. Feel free to test it out! :)
+<hr>
 
-{% include readaggregator_footer.html %}
+I hope you enjoyed my extensions! If you know any ways of improving it — let me know! There’s a [final extension](https://gist.github.com/Otbivnoe/04b8bd7984fba0cb58ca7f136fd95582) on UserDefaults. Feel free to test it out! :)

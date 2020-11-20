@@ -5,9 +5,9 @@
 @import "colors";
 
 img {
-    width: 100%;
-    height: 100%; 
-    object-fit: contain;
+	width: 100%;
+	height: 100%;
+	object-fit: contain;
 }
 
 body {
@@ -63,7 +63,7 @@ body {
 .sidebar__description {
 	margin-top: 12px;
 	font-size: 1rem;
-	line-height: 1.21875rem;
+	line-height: 1.3rem;
 	font-weight: 300;
 	color: $sidebar-description--light;
 }
@@ -101,10 +101,11 @@ body {
 .sidebar__nav-item:hover,
 .sidebar__nav-item:focus {
 	color: $red-color;
+	text-decoration: none;
 }
 
 .sidebar__nav-item.selected {
-	font-weight: 700;
+	font-weight: 400;
 	color: $red-color;
 }
 
@@ -147,9 +148,8 @@ body {
 	max-width: 1000px;
 	padding-left: 20%;
 	padding-right: 20%;
-	padding-bottom: 30px;
 	margin-left: auto;
-	margin-right: auto;	
+	margin-right: auto;
 }
 
 .main__logo {
@@ -162,6 +162,14 @@ body {
 
 .main__avatar-container {
 	display: none;
+}
+
+.copyright {
+	position: relative;
+	margin-top: 50px;
+	opacity: 0.7;
+	font-size: 0.8rem;
+	text-align: center;
 }
 
 /* Article */
@@ -178,6 +186,7 @@ body {
 
 .article > .article-title > a:hover {
 	color: $red-color;
+	text-decoration: none;
 }
 
 .article:hover {
@@ -207,14 +216,13 @@ body {
 	font-weight: 700;
 	font-size: 1.25rem;
 	line-height: 1.5rem;
-	color: $article-title--light;	
+	color: $article-title--light;
 }
 
 .article-description {
 	margin-top: 12px;
 	font-weight: 300;
 	font-size: 1rem;
-	line-height: 1.5rem;
 	color: $article-description--light;
 	margin-bottom: 0px;
 	display: -webkit-box;
@@ -224,6 +232,24 @@ body {
 }
 
 /* Media */
+
+@media (max-height: 800px) {
+	.sidebar__background {
+		top: 0px;
+	}
+
+	.sidebar__nav {
+		text-align: center;
+		top: 400px;
+		width: 100%;
+	}
+}
+
+@media (max-height: 600px) {
+	.sidebar__social-container {
+		top: 530px;
+	}
+}
 
 @media (max-width: 800px) {
 	.sidebar {
@@ -267,7 +293,6 @@ body {
 		margin-bottom: 25px;
 		text-align: center;
 	}
-	
 }
 
 @media (prefers-color-scheme: dark) {
@@ -286,7 +311,7 @@ body {
 	.article-description {
 		color: $article-description--dark;
 	}
-	
+
 	.article-title > a {
 		color: $article-title--dark;
 	}

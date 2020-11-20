@@ -2,7 +2,7 @@
 layout:   post
 title:     "A Flexible Routing Approach in an iOS App"
 subtitle:  "At Rosberry we've given up on using storyboards, except the Launch Screen, of course, and configure all layout and transition logic in code. In order to understand our reasons - read the Life without Interface Builder written by 's team, I hope you will find this post useful."
-date:      "2018-02-01 15:47:12 +0300"
+date:      "2018-02-01"
 img:       /assets/img/articles/routing.jpeg
 ---
 
@@ -222,9 +222,9 @@ final class ProfileViewController: UIViewController {
 
 If necessary to change a transition type, just change it in the protocol extension of *ProfileRoute* and this code will continue working without any changes! Awesome, isn’t it?
 
+<hr>
+
 ## Conclusion
 At the end, I want to say that this Routing approach can be simply adapted to *MVC, VIPER, MVVM* architectures and even if you use *Coordinators*, they can work together. I’m trying my best to improve this solution and will listen to your bits of advice with pleasure!
 
 For those who are interested in this solution, I prepared the [example](https://github.com/Otbivnoe/Routing) with few modules and different transition between them to understand it more deeply. Download and play!
-
-{% include readaggregator_footer.html %}
