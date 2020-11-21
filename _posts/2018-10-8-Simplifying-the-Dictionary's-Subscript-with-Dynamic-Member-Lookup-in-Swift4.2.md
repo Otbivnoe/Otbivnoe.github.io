@@ -2,7 +2,7 @@
 layout:   post
 title:    "Simplifying the Dictionary’s Subscript with Dynamic Member Lookup in Swift 4.2"
 subtitle: "Apple’s added some great features in Swift 4.2 release, so in this post, we’re going to use some of them to achieve a neat key-syntax feature for the Dictionary, but before reading further you by far have to know about the Dynamic Member Lookup."
-date:     "2018-10-08"
+date:     "2018-10-08 10:47:12 +0300"
 img:      /assets/img/articles/dynamic-lookup.png
 ---
 

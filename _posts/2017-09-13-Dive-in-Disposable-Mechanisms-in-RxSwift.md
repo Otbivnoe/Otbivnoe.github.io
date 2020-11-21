@@ -2,7 +2,7 @@
 layout:   post
 title:     "Dive in Disposable Mechanisms in RxSwift"
 subtitle:  "Hey everyone! As a Reactive Lover, I’m going to continue a series of articles dedicated to RxSwift. In my first reactive post, I reasoned about some improvements of flatMap function (you can check it here) and today I want to extend my knowledge of RxSwift by exploring all Rx Disposables."
-date:      "2017-09-13"
+date:      "2017-09-13 11:47:12 +0300"
 img:       /assets/img/articles/disposable.png
 ---
 
