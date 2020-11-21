@@ -15,3 +15,6 @@ vendor
 
 # Local History for Visual Studio Code
 .history/
+
+# Dependency directories
+node_modules/

@@ -1,0 +1,17 @@
+{
+  "name": "otbivnoes-blog",
+  "private": true,
+  "author": "Nikita Ermolenko",
+  "dependencies": {},
+  "devDependencies": {
+    "stylelint": "^13.8.0",
+    "stylelint-config-idiomatic-order": "^8.1.0",
+    "stylelint-config-standard": "^20.0.0",
+    "stylelint-order": "^4.1.0",
+    "stylelint-scss": "^3.18.0"
+  },
+  "scripts": {
+    "stylelint": "stylelint '**/*{.css,.scss}'",
+    "stylelint:fix": "stylelint '**/*{.css,.scss}' --fix"
+  }
+}
