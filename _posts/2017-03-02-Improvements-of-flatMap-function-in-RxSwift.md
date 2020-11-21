@@ -1,8 +1,8 @@
 ---
-layout:   post
-title:     "Improvements of flatMap function in RxSwift"
-subtitle:  "Hey! If you read it, you probably good in RxSwift and ARC, understand differences between weak and unowned keywords. If no, please get acquainted with it and come back!"
-date:      "2017-03-02 15:47:12 +0300"
+layout: post
+title: "Improvements of flatMap function in RxSwift"
+subtitle: "Hey! If you read it, you probably good in RxSwift and ARC, understand differences between weak and unowned keywords. If no, please get acquainted with it and come back!"
+date: 2017-03-02 15:47:12 +0300
 ---
 
 Hey! If you read it, you probably good in **RxSwift** and **ARC**, understand differences between `weak` and `unowned` keywords. If no, please get acquainted with it and come back!

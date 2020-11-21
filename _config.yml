@@ -22,8 +22,8 @@ title: otbivnoe's blog
 author: Nikita Ermolenko
 email: master.ermolenko@gmail.com
 description: iOS evangelist | lover of music, bikes and photography | ex-Yandex
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: /
+url: https://otbivnoe.github.io
 timezone: Europe/Moscow
 
 twitter_username: iOtbivnoe

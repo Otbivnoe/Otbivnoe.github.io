@@ -1,9 +1,9 @@
 ---
-layout:   post
-title:     "Let’s Optimize the Work with Terminal for Xcode Developers"
-subtitle:  "Lately I’ve often had to switch between different Xcode projects and every time I had to change a path to a specific project in terminal. I am so tired of it! I want to have the opportunity to open Terminal right from Xcode with an already specifed path."
-date:      "2017-10-23 16:47:12 +0300"
-img:       /assets/img/articles/xcode-terminal/xcode-terminal.png
+layout: post
+title: "Let’s Optimize the Work with Terminal for Xcode Developers"
+subtitle: "Lately I’ve often had to switch between different Xcode projects and every time I had to change a path to a specific project in terminal. I am so tired of it! I want to have the opportunity to open Terminal right from Xcode with an already specifed path."
+date: 2017-10-23 16:47:12 +0300
+img: /assets/img/articles/xcode-terminal/xcode-terminal.png
 ---
 
 Every iOS Developer often has to deal with things that need to be done via Terminal:
