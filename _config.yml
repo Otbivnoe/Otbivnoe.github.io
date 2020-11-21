@@ -59,3 +59,5 @@ exclude:
   - tools
   - docs
   - README.md
+  - node_modules
+  - package.json
