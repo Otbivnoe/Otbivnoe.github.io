@@ -1,5 +1,5 @@
 ---
-title: Otbivnoe's blog
+title: "Otbivnoe's blog"
 layout: default
 ---
 
