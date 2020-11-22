@@ -33,6 +33,7 @@ encoding: UTF-8
 
 plugins:
   - jekyll-feed
+  - jekyll-sitemap
 
 sass:
   sass_dir: /assets/css
