@@ -8,7 +8,7 @@ $content-background-color--dark: #141414;
 $sidebar-background--light: #f4f4f4;
 $sidebar-background--dark: #494949;
 
-$sidebar-name--light: #171717;
+$sidebar-name--light: black;
 $sidebar-name--dark: white;
 
 $sidebar-description--light: #898989;
@@ -47,3 +47,14 @@ $post-code--dark: #de6b18;
 
 $post-code-background--light: #f8f8f8;
 $post-code-background--dark: #272822;
+
+// Footer
+
+$footer-readaggregator-background--light: #f5f5f5;
+$footer-readaggregator-background--dark: #222222;
+
+$footer-readaggregator-title--light: black;
+$footer-readaggregator-title--dark: white;
+
+$footer-readaggregator-subtitle--light: #4d4d4d;
+$footer-readaggregator-subtitle--dark: #bdbdbd;
