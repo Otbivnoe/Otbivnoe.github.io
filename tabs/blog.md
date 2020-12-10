@@ -5,9 +5,9 @@ layout: default
 ---
 
 {% for post in site.posts | sort: "date" %}
-<article class ="article">
+<article class ="article" onclick="location.href='{{ post.url }}';" style="cursor: pointer;">
 	<p class="article-date">{{ post.date | date_to_long_string }}</p>
-	<h1 class="article-title"><a href="{{ post.url }}">{{ post.title }}</a></h1>
+	<h1 class="article-title">{{ post.title }}</h1>
 	<p class="article-description">{{ post.subtitle }}</p>
 </article>
 {% endfor %}

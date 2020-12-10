@@ -187,6 +187,10 @@ body {
   box-shadow: 0 4px 15px $article-shadow-hover--light;
 }
 
+.article:hover .article-title {
+  color: $red-color;
+}
+
 .article + .article {
   margin-top: 20px;
 }
@@ -203,19 +207,10 @@ body {
 .article-title {
   margin-top: 16px;
   margin-bottom: 0;
-}
-
-.article-title > a {
   color: $article-title--light;
   font-size: 1.25rem;
   font-weight: 700;
   line-height: 1.5rem;
-  text-decoration: none;
-}
-
-.article > .article-title > a:hover {
-  color: $red-color;
-  text-decoration: none;
 }
 
 .article-description {
@@ -355,7 +350,7 @@ body {
     color: $article-description--dark;
   }
 
-  .article-title > a {
+  .article-title {
     color: $article-title--dark;
   }
 
