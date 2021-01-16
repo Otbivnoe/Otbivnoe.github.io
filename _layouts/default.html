@@ -35,7 +35,7 @@
 
 			<div class="sidebar__social-container">
                 {% for item in site.data.social %}
-                <a class="sidebar__social-item" href={{ item.link }} target="_blank"><img src={{ item.img }}></a>
+                <a class="sidebar__social-item" href={{ item.link }} target="_blank"><img src={{ item.img }} title={{ item.title }}></a>
                 {% endfor %}				
 			</div>
 		</aside>

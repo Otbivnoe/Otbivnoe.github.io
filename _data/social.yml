@@ -1,14 +1,19 @@
 - img:  /assets/img/side-menu/social/twitter.png
   link: https://twitter.com/iOtbivnoe
+  title: Twitter
 
 - img:  /assets/img/side-menu/social/stackoverflow.png
   link: https://stackoverflow.com/users/3733734/nikita-ermolenko
+  title: StackOverflow
 
 - img:  /assets/img/side-menu/social/github.png
   link: https://github.com/otbivnoe
+  title: Github
 
 - img:  /assets/img/side-menu/social/rss.png
   link: /feed.xml
+  title: RSS
 
 - img:  /assets/img/side-menu/social/soul.png
   link: https://t.me/readaggregator
+  title: Readaggregator
