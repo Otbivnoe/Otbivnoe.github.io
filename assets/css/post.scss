@@ -5,6 +5,12 @@
 
 .post-logo {
   border-radius: 20px;
+  margin-bottom: 30px;
+  background-color: $post-logo-background--light;
+}
+
+.post-img {
+  border-radius: 5px;
 }
 
 .post-title {
@@ -113,5 +119,9 @@ hr::after {
 
   hr::after {
     color: $post-text--dark;
+  }
+
+  .post-logo {
+    background-color: $post-logo-background--dark;
   }
 }

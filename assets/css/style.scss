@@ -9,6 +9,12 @@ img {
   object-fit: contain;
 }
 
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 body {
   margin: 0;
   background-color: $content-background-color--light;
