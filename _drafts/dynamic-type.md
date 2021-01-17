@@ -45,8 +45,6 @@ Developers write apps for users obviously and about **25 percent** of them use n
 
 Just for clarification, the **Accessibility fonts** are an additional group with even larger text sizes for users with accessibility needs. Usually, looking at the Apple apps for these fonts not only changing the text size but apply some layout changes - you will see it later.
 
-(подумать еще)
-
 <hr>
 
 Now knowing why it's important to pay attention to it, let's summarize the most important practices in my opinion:
@@ -111,6 +109,70 @@ With the above in place, this time label ("Yesterday") has an adjusted color. It
 
 One more example of adapting to the vertical-style UI.
 
-### 5. Navigation bar and Tab bar 
+### 5. Placeholdes and contextual menus
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/placeholders.png" alt="Dynamic Type UI example">
+
+You may have noticed some non-changing elements, namely the tab bar, and the navigation bar. Since generally, they are static-text elements and not representing the main content, they stay with the same size or just with minor changes. For native elements, Apple prepared placeholders. When a user holds a finger over an element, this placeholder appears. It's a win-win for developers and users, so keep in mind when planning to implement a custom tab bar or navigation controllers. 
+
+<img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/photos.png" alt="Dynamic Type UI example">
+
+Actually, it's ok to apply contextual menus for custom elements as well, so the photos app does.
+
+p.s. it looks buggy, but my point is clear :)
+
+### 6. Magic switcher
+
+<img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/switcher.png" alt="Dynamic Type UI example">
+
+The last one - the most confusing. Recently discovered the differences in different iOS versions and no ideas either it's a bug in iOS 12 or just a regression in iOS 13. Or maybe just the awareness of better readability, who knows. I've tried to find an explanation for this behavior with no luck. So if you have information about this - please, [tell me](/contact).
+
+<hr>
+
+It's time to dive into the practice! 
+
+I won't show step by step tutorial of implementing Dynamic Type in your app, but I'm going to cover some hacks and tips for simplify this process. If it's really your first meeting with this topic I highly recommend to get familiar with [this small article](https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically) at first.
+
+
+-  As I said before, primarily is a collecting statistics - you need the [preferredContentSizeCategory](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory):
+
+```swift
+UIApplication.shared.preferredContentSizeCategory
+```
+
+- [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/) were introduced during WWDC 2019 and it's a huge gift for us! Over 2,400 consistent, highly configurable symbols. Apple designed SF Symbols to integrate seamlessly with the San Francisco system font, so the symbols automatically ensure optical vertical alignment with text in all weights and sizes. 
+
+As you can see the image has the same style using a symbol configuration. So the image is growing alongside the label automatically.
+
+```swift
+let configuration = UIImage.SymbolConfiguration(textStyle: .body)
+let image = UIImage(systemName: "bookmark", withConfiguration: configuration)
+label.font = UIFont.preferredFont(forTextStyle: .body)
+imageView.image = image
+```
+
+SwiftUI is more friendly - provides Dynamic Type out of the box:
+
+```swift
+// .body style - the default
+Image(systemName: "bookmark")
+Text("Interesting article")
+
+Image(systemName: "bookmark").font(.largeTitle)
+Text("Interesting article").font(.largeTitle)
+```
+
+- This is more useful for iPads, and since they are gaining popularity these days by far, so more apps will adapt UI for new realities, we need to talk about it a bit.
+
+[Readable Content Guide](https://developer.apple.com/documentation/uikit/uiview/1622644-readablecontentguide) - our next fellow, a layout guide defines an area that can easily be read without forcing users to move their head to track the lines.
+
+<img class="centered post-img" srcset="/assets/img/articles/dynamic-type/readable-guides.png" alt="Dynamic Type UI example">
+
+```swift
+let guide = view.readableContentGuide
+label.topAnchor.constraint(equalTo: guide.topAnchor).isActive = true
+label.leftAnchor.constraint(equalTo: guide.leftAnchor).isActive = true
+label.rightAnchor.constraint(equalTo: guide.rightAnchor).isActive = true
+```
+
+p.s. I haven't found a similar in SwiftUI, except padding with different values. So would appreciate if you tell me how to configure it right.
