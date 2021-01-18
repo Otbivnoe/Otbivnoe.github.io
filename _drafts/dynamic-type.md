@@ -8,14 +8,14 @@ image: /assets/img/articles/dynamic-type/logo.png
 
 <head>
 <style>
-	@import "colors";
+    @import "colors";
 
-	.dynamic-type-chart {
-		margin-top: 40px;
-		margin-bottom: 50px;
-		width: 100%;
-		height: auto;
-	}
+    .dynamic-type-chart {
+        margin-top: 40px;
+        margin-bottom: 50px;
+        width: 100%;
+        height: auto;
+    }
 </style>
 </head>
 
@@ -47,6 +47,8 @@ Just for clarification, the **Accessibility fonts** are an additional group with
 
 <hr>
 
+## Best practices
+
 Now knowing why it's important to pay attention to it, let's summarize the most important practices in my opinion:
 
 - **Apple in its HIG recommends setting the minimum size for Body text to be 17pt.**
@@ -65,13 +67,17 @@ More is available on [uxdesigh](https://uxdesign.cc/guide-for-designing-better-m
 
 <hr>
 
+## Example of Accessible UI 
+
 At first, it seems effortless adapting Dynamic Type. If you follow the auto-layout guidelines properly, avoid using constant heights for UI elements, it should work as expected without any additional coding. But there's a little number of users with accessibility fonts and you have to bear in mind them. 
 
 **Important to note** that at the time of writing this article iOS 14.3 is the most actual one and all further examples will be related to this version.
 
 So let's discover how to adapt the Accessibility UI in the right way!
 
-### 1. Phone app - Favorites tab 
+<a id="phone-favorites-tab"></a>
+
+#### 1. Phone app - Favorites tab 
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/contacts-favourites.png" alt="Dynamic Type UI example">
 
@@ -84,7 +90,7 @@ It is worth mentioning, you should not get rid of images all-time in similar UI.
 
 Points with the **accessibility** label related only to extra large fonts.
 
-### 2. Phone app - Recents tab 
+#### 2. Phone app - Recents tab 
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/contacts-recents.png" alt="Dynamic Type UI example">
 
@@ -95,7 +101,7 @@ For simplicity, I will omit the general UI changes and describe the new ones:
 
 Further example with the Mail app will demonstrate not only adjusting the position of a label but changing a color too.
 
-### 3. Mail app
+#### 3. Mail app
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/mail.png" alt="Dynamic Type UI example">
 
@@ -103,13 +109,13 @@ With the above in place, this time label ("Yesterday") has an adjusted color. It
 
 **Keep in my the contrast of elements!**
 
-### 4. Phone app - Contact tab 
+#### 4. Phone app - Contact tab 
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/tim.png" alt="Dynamic Type UI example">
 
 One more example of adapting to the vertical-style UI.
 
-### 5. Placeholdes and contextual menus
+#### 5. Placeholdes and contextual menus
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/placeholders.png" alt="Dynamic Type UI example">
 
@@ -121,7 +127,7 @@ Actually, it's ok to apply contextual menus for custom elements as well, so the 
 
 p.s. it looks buggy, but my point is clear :)
 
-### 6. Magic switcher
+#### 6. Magic switcher
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/switcher.png" alt="Dynamic Type UI example">
 
@@ -129,50 +135,125 @@ The last one - the most confusing. Recently discovered the differences in differ
 
 <hr>
 
-It's time to dive into the practice! 
+## It's time to dive into the practice! 
 
 I won't show step by step tutorial of implementing Dynamic Type in your app, but I'm going to cover some hacks and tips for simplify this process. If it's really your first meeting with this topic I highly recommend to get familiar with [this small article](https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically) at first.
 
 
 -  As I said before, primarily is a collecting statistics - you need the [preferredContentSizeCategory](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory):
 
-```swift
+> ```swift
 UIApplication.shared.preferredContentSizeCategory
 ```
 
 - [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/) were introduced during WWDC 2019 and it's a huge gift for us! Over 2,400 consistent, highly configurable symbols. Apple designed SF Symbols to integrate seamlessly with the San Francisco system font, so the symbols automatically ensure optical vertical alignment with text in all weights and sizes. 
 
-As you can see the image has the same style using a symbol configuration. So the image is growing alongside the label automatically.
+> As you can see the image has the same style using a symbol configuration. So the image is growing alongside the label automatically.
 
-```swift
+> ```swift
 let configuration = UIImage.SymbolConfiguration(textStyle: .body)
 let image = UIImage(systemName: "bookmark", withConfiguration: configuration)
-label.font = UIFont.preferredFont(forTextStyle: .body)
 imageView.image = image
 ```
-
-SwiftUI is more friendly - provides Dynamic Type out of the box:
-
 ```swift
+label.font = UIFont.preferredFont(forTextStyle: .body)
+label.adjustsFontForContentSizeCategory = true
+label.numberOfLines = 0
+```
+
+> SwiftUI is more friendly - provides Dynamic Type out of the box:
+
+> ```swift
 // .body style - the default
 Image(systemName: "bookmark")
 Text("Interesting article")
-
+```
+> ```swift
 Image(systemName: "bookmark").font(.largeTitle)
 Text("Interesting article").font(.largeTitle)
 ```
 
 - This is more useful for iPads, and since they are gaining popularity these days by far, so more apps will adapt UI for new realities, we need to talk about it a bit.
 
-[Readable Content Guide](https://developer.apple.com/documentation/uikit/uiview/1622644-readablecontentguide) - our next fellow, a layout guide defines an area that can easily be read without forcing users to move their head to track the lines.
+> [Readable Content Guide](https://developer.apple.com/documentation/uikit/uiview/1622644-readablecontentguide) - our next fellow, a layout guide defines an area that can easily be read without forcing users to move their head to track the lines.
 
-<img class="centered post-img" srcset="/assets/img/articles/dynamic-type/readable-guides.png" alt="Dynamic Type UI example">
+> <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/readable-guides.png" alt="Dynamic Type UI example">
 
-```swift
+> The width of readable area changes according user's preferred content size.
+
+> ```swift
 let guide = view.readableContentGuide
 label.topAnchor.constraint(equalTo: guide.topAnchor).isActive = true
 label.leftAnchor.constraint(equalTo: guide.leftAnchor).isActive = true
 label.rightAnchor.constraint(equalTo: guide.rightAnchor).isActive = true
 ```
 
-p.s. I haven't found a similar in SwiftUI, except padding with different values. So would appreciate if you tell me how to configure it right.
+> p.s. I haven't found a similar in SwiftUI, except padding with different values. So would appreciate if you tell me how to configure it right.
+
+- In iOS 13 UIKit kicks off a prediction for initial traits of a view. UIKit guesses the likely traits for the view based on the context. So if you relied that `traitCollectionDidChange` will be called when a view is first added to the view hierarchy, it's not always true anymore. You can read the detailed article [here](https://useyourloaf.com/blog/predicting-size-classes-in-ios-13/).
+
+
+> ```swift
+let vew = UIView()
+print(customVew.traitCollection.preferredContentSizeCategory) // iOS 12 - Unspecified
+print(customVew.traitCollection.preferredContentSizeCategory) // iOS 13+ - AccessibilityXXL
+```
+
+> My point is to have a properly configured view in both places. Depends on iOS version it'll work different. So be aware of it!
+
+- Using `automaticDimension` without any doubt is a good friend for Dynamic Type. It's required setting `estimatedRowHeight` when using `automaticDimension` as well and we can improve performance by passing a dynamic value instead of a static one.
+
+> ```swift
+tableView.rowHeight = UITableView.automaticDimension
+tableView.estimatedRowHeight = UIFontMetrics.default.scaledValue(for: 50)
+```
+
+- It would seem obvious, but worth mention that using Stack View simplifies a lot in some cases. If you're building a simple setting menu, stack view will help out you by far.
+
+> <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/stackview.png" alt="Dynamic Type UI example">
+
+>```swift
+let stackView = UIStackView()
+stackView.axis = .horizontal
+```
+
+>```swift
+struct ContentView: View {
+    var body: some View {
+        Group {
+            if sizeCategory.isAccessibilityCategory {
+                VStack { ... }
+            } else {
+                HStack { ... }
+            }
+        }
+    }
+}
+```
+
+- Also worth mentioning a property wrapper that was released during WWDC20 - `ScaledMetric`. It allows you to scale a number according to the size category chosen by a user.
+
+>```swift
+struct ContentView: View {
+    @ScaledMetric(relativeTo: .body) var spacing: CGFloat = 10
+```
+>```swift
+    var body: some View {
+        VStack(spacing: spacing) {
+            (elements)
+        }
+    }
+}
+```
+
+- At the end I will ask you to pay attention to the <a href="#phone-favorites-tab">first example</a> one more time. We can distinctly see the thick separators on the second picture. And because it's enough a common practice implementing custom separators on our side, a developer needs to keep in mind the native behaviour.
+
+<hr>
+
+## Debugging or how to make your life easier
+
+Testing Dynamic Type can be a time-consuming process for sure - switching between Settings app for changing the font size and your app... As a result spending a lot of time to this is not what you're planning to achieve. So let's cover a few much simple ways of changing the font size on the fly.
+
+#### Control Centre
+
+<img class="centered post-img" srcset="/assets/img/articles/dynamic-type/control-centre.png" alt="Dynamic Type UI example">

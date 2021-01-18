@@ -77,7 +77,9 @@ table.text td {
   vertical-align: top;
 }
 
-p > code {
+p > code, 
+ul > code,
+li > code {
   background: $post-code-background--light;
   color: $post-code--light;
   font-family: inherit;
@@ -96,6 +98,27 @@ hr::after {
   letter-spacing: 12px;
 }
 
+.highlight {
+  overflow: auto;
+}
+
+.highlight table td {
+  padding: 5px;
+}
+
+div .highlight {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.highlight table pre {
+  margin: 0;
+}
+
+blockquote {
+  margin-left: 18px;
+}
+
 @media (prefers-color-scheme: dark) {
   h1,
   h2,
@@ -112,7 +135,9 @@ hr::after {
   }
 
   p > code,
-  em > code {
+  em > code,
+  ul > code,
+  li > code {
     background: $post-code-background--dark;
     color: $post-code--dark;
   }
