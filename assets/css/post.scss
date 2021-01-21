@@ -11,6 +11,7 @@
 
 .post-img {
   border-radius: 5px;
+  background-color: $post-logo-background--light;
 }
 
 .post-title {
@@ -147,6 +148,10 @@ blockquote {
   }
 
   .post-logo {
+    background-color: $post-logo-background--dark;
+  }
+
+  .post-img {
     background-color: $post-logo-background--dark;
   }
 }

@@ -2,7 +2,7 @@
 layout: post
 title: "On a way to great accessibility with Dynamic Type"
 subtitle: "Sir, put off your monocle, today we will talk about Dynamic Type! Accessibility plays a crucial role in all apps by far, so designing an app keep text size and layout in mind for clarity and readability."
-date: 2021-01-10 15:47:12 +0300
+date: 2021-01-21 15:47:12 +0300
 image: /assets/img/articles/dynamic-type/logo.png
 ---
 
@@ -36,14 +36,14 @@ Without further ado, let's dive into the article!
 
 <hr>
 
-Developers write apps for users obviously and about **25 percent** of them use non-default text size. Having discovered these statistics reading the [PSPDFKit blog](https://pspdfkit.com/blog/2018/improving-dynamic-type-support/#user-adoption) and consider the fact Apple has moved the "Accessibility" settings one level up from the "General" tab in iOS 14 I was really surprised. So decided to add the metrics in the currently developing app. With the received similar results I went to a manager so that a ticket for implementing this was created.
+Developers write apps for users obviously and about **25 percent** of them use non-default text size. Having discovered these statistics reading the [PSPDFKit blog](https://pspdfkit.com/blog/2018/improving-dynamic-type-support/#user-adoption) and consider the fact Apple has moved the "Accessibility" settings one level up from the "General" tab in iOS 14 I was really surprised. So decided to add the metrics in the currently developing app and got the similiar results:
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/assets/img/articles/dynamic-type/statistics-dark.png">
     <img class="dynamic-type-chart centered" srcset="/assets/img/articles/dynamic-type/statistics-light.png" alt="Dynamic Type statistics (chart)">
 </picture>
 
-Just for clarification, the **Accessibility fonts** are an additional group with even larger text sizes for users with accessibility needs. Usually, looking at the Apple apps for these fonts not only changing the text size but apply some layout changes - you will see it later.
+Just for clarification, the **Accessibility fonts** is an additional group with even larger text sizes for users with accessibility needs. Usually, looking at the Apple apps for these fonts not only changing the text size but apply some layout changes - you will see it later.
 
 <hr>
 
@@ -256,4 +256,44 @@ Testing Dynamic Type can be a time-consuming process for sure - switching betwee
 
 #### Control Centre
 
+This is a way you need when developing on a real device. Just add "Text Size" option in Control Centre. Make sure the Larger Accessibility Sizes switcher is enabled: **Setting > Accessibility > Display & Text Size > Larger Text**.
+
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/control-centre.png" alt="Dynamic Type UI example">
+
+For super-duper optimization fellows, try creating a shortcut for setting a needed text size and invoke it by triple or double tap action on a back of your phone.
+
+1. Create shortcut in Shortcut app
+2. Use it in accessibility menu of Back Tap: **Settings > Accessibility > Touch > Back Tap (at the bottom) > Double / Triple Tap > (Created Shortut)**
+
+<img class="centered post-img" srcset="/assets/img/articles/dynamic-type/tripple-tap.png" alt="Adjusting accessibility via Control Centre">
+
+#### Accessibility Inspector
+
+The old best friend located at **Xcode > Open Developer Tool**. Great to know that you can't only change settings for the Simulator, but also for any connected iOS device.
+
+<img class="centered post-img" srcset="/assets/img/articles/dynamic-type/accessibility_inspector.png" alt="Screenshot of Xcode Accessibility Inspector">
+
+#### Xcode
+
+Xcode makes it easier overriding these settings directly from debugger and I hope everyone has already had time to get to know this.
+
+<img class="centered post-img" srcset="/assets/img/articles/dynamic-type/xcode-dynamic-type.png" alt="Xcode Dynamic Type Setting">
+
+#### SwiftUI
+
+At the end it's quite simple to set environment for different previews and see multiple results in a row. But this approach will suit for real lucky mans, who already use SwiftUI in production. 😉 
+
+```swift
+struct ContentView_Previews: PreviewProvider {
+   static var previews: some View {
+      Group {          
+         ContentView().environment(\.sizeCategory, .extraSmall)
+         ContentView().environment(\.sizeCategory, .accessibilityLarge)
+      }
+   }
+}
+```
+
+<hr>
+
+I hope this was worth reading article for you! Dynamic Type is our good friend and we shouldn't forget it.
