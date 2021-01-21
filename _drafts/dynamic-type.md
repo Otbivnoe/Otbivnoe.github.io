@@ -105,7 +105,7 @@ Further example with the Mail app will demonstrate not only adjusting the positi
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/mail.png" alt="Dynamic Type UI example">
 
-With the above in place, this time label ("Yesterday") has an adjusted color. It looks a lot better even with such small changes. 
+With the above in place, this time label (**"Yesterday"**) has an adjusted color. It looks a lot better even with such small changes. 
 
 **Keep in my the contrast of elements!**
 
@@ -115,11 +115,13 @@ With the above in place, this time label ("Yesterday") has an adjusted color. It
 
 One more example of adapting to the vertical-style UI.
 
+Generally, I really appreciate that Apple adapts all their apps to Dynamic Type carefully. It's a great place to be inspired and learn ways of adaptive layout.
+
 #### 5. Placeholdes and contextual menus
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/placeholders.png" alt="Dynamic Type UI example">
 
-You may have noticed some non-changing elements, namely the tab bar, and the navigation bar. Since generally, they are static-text elements and not representing the main content, they stay with the same size or just with minor changes. For native elements, Apple prepared placeholders. When a user holds a finger over an element, this placeholder appears. It's a win-win for developers and users, so keep in mind when planning to implement a custom tab bar or navigation controllers. 
+You may have noticed some non-changing elements, namely the tab bar, and the navigation bar. Since generally, they are static-text elements and not represent the main content, they stay with the same size or just with minor changes. For native elements, Apple prepared placeholders. When a user holds a finger over an element, this placeholder appears. It's a win-win for developers and users, so keep in mind when planning to implement a custom tab bar or navigation controllers. 
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/photos.png" alt="Dynamic Type UI example">
 
@@ -137,7 +139,7 @@ The last one - the most confusing. Recently discovered the differences in differ
 
 ## It's time to dive into the practice! 
 
-I won't show step by step tutorial of implementing Dynamic Type in your app, but I'm going to cover some hacks and tips for simplify this process. If it's really your first meeting with this topic I highly recommend to get familiar with [this small article](https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically) at first.
+I won't show step by step tutorial of implementing Dynamic Type in your app, but I'm going to cover some hacks and tips for simplifying this process. If it's really your first meeting with this topic I highly recommend to get familiar with [this small article](https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically) at first.
 
 
 -  As I said before, primarily is a collecting statistics - you need the [preferredContentSizeCategory](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory):
