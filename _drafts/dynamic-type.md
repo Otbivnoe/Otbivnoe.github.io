@@ -144,36 +144,34 @@ I won't show step by step tutorial of implementing Dynamic Type in your app, but
 
 -  As I said before, primarily is a collecting statistics - you need the [preferredContentSizeCategory](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory):
 
-> ```swift
+> ~~~swift
 UIApplication.shared.preferredContentSizeCategory
-```
+~~~
 
 - [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/) were introduced during WWDC 2019 and it's a huge gift for us! Over 2,400 consistent, highly configurable symbols. Apple designed SF Symbols to integrate seamlessly with the San Francisco system font, so the symbols automatically ensure optical vertical alignment with text in all weights and sizes. 
 
 > As you can see the image has the same style using a symbol configuration. So the image is growing alongside the label automatically.
 
-> ```swift
+> ~~~swift
 let configuration = UIImage.SymbolConfiguration(textStyle: .body)
 let image = UIImage(systemName: "bookmark", withConfiguration: configuration)
 imageView.image = image
-```
-```swift
+> 
 label.font = UIFont.preferredFont(forTextStyle: .body)
 label.adjustsFontForContentSizeCategory = true
 label.numberOfLines = 0
-```
+~~~
 
 > SwiftUI is more friendly - provides Dynamic Type out of the box:
 
-> ```swift
+> ~~~swift
 // .body style - the default
 Image(systemName: "bookmark")
 Text("Interesting article")
-```
-> ```swift
+>
 Image(systemName: "bookmark").font(.largeTitle)
 Text("Interesting article").font(.largeTitle)
-```
+~~~
 
 - This is more useful for iPads, and since they are gaining popularity these days by far, so more apps will adapt UI for new realities, we need to talk about it a bit.
 
@@ -183,43 +181,43 @@ Text("Interesting article").font(.largeTitle)
 
 > The width of readable area changes according user's preferred content size.
 
-> ```swift
+> ~~~swift
 let guide = view.readableContentGuide
 label.topAnchor.constraint(equalTo: guide.topAnchor).isActive = true
 label.leftAnchor.constraint(equalTo: guide.leftAnchor).isActive = true
 label.rightAnchor.constraint(equalTo: guide.rightAnchor).isActive = true
-```
+~~~
 
 > p.s. I haven't found a similar in SwiftUI, except padding with different values. So would appreciate if you tell me how to configure it right.
 
 - In iOS 13 UIKit kicks off a prediction for initial traits of a view. UIKit guesses the likely traits for the view based on the context. So if you relied that `traitCollectionDidChange` will be called when a view is first added to the view hierarchy, it's not always true anymore. You can read the detailed article [here](https://useyourloaf.com/blog/predicting-size-classes-in-ios-13/).
 
 
-> ```swift
+> ~~~swift
 let vew = UIView()
 print(customVew.traitCollection.preferredContentSizeCategory) // iOS 12 - Unspecified
 print(customVew.traitCollection.preferredContentSizeCategory) // iOS 13+ - AccessibilityXXL
-```
+~~~
 
 > My point is to have a properly configured view in both places. Depends on iOS version it'll work different. So be aware of it!
 
 - Using `automaticDimension` without any doubt is a good friend for Dynamic Type. It's required setting `estimatedRowHeight` when using `automaticDimension` as well and we can improve performance by passing a dynamic value instead of a static one.
 
-> ```swift
+> ~~~swift
 tableView.rowHeight = UITableView.automaticDimension
 tableView.estimatedRowHeight = UIFontMetrics.default.scaledValue(for: 50)
-```
+~~~
 
 - It would seem obvious, but worth mention that using Stack View simplifies a lot in some cases. If you're building a simple setting menu, stack view will help out you by far.
 
 > <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/stackview.png" alt="Dynamic Type UI example">
 
->```swift
+>~~~swift
 let stackView = UIStackView()
 stackView.axis = .horizontal
-```
+~~~
 
->```swift
+>~~~swift
 struct ContentView: View {
     var body: some View {
         Group {
@@ -231,22 +229,22 @@ struct ContentView: View {
         }
     }
 }
-```
+~~~
 
 - Also worth mentioning a property wrapper that was released during WWDC20 - `ScaledMetric`. It allows you to scale a number according to the size category chosen by a user.
 
->```swift
+>~~~swift
 struct ContentView: View {
     @ScaledMetric(relativeTo: .body) var spacing: CGFloat = 10
-```
->```swift
+~~~
+>~~~swift
     var body: some View {
         VStack(spacing: spacing) {
             (elements)
         }
     }
 }
-```
+~~~
 
 - At the end I will ask you to pay attention to the <a href="#phone-favorites-tab">first example</a> one more time. We can distinctly see the thick separators on the second picture. And because it's enough a common practice implementing custom separators on our side, a developer needs to keep in mind the native behaviour.
 
@@ -285,7 +283,7 @@ Xcode makes it easier overriding these settings directly from debugger and I hop
 
 At the end it's quite simple to set environment for different previews and see multiple results in a row. But this approach will suit for real lucky mans, who already use SwiftUI in production. 😉 
 
-```swift
+~~~swift
 struct ContentView_Previews: PreviewProvider {
    static var previews: some View {
       Group {          
@@ -294,7 +292,7 @@ struct ContentView_Previews: PreviewProvider {
       }
    }
 }
-```
+~~~
 
 <hr>
 
