@@ -2,7 +2,7 @@
 layout: post
 title: "On a way to great accessibility with Dynamic Type"
 subtitle: "Sir, put off your monocle, today we will talk about Dynamic Type! Accessibility plays a crucial role in all apps by far, so designing an app keep text size and layout in mind for clarity and readability."
-date: 2021-01-21 15:47:12 +0300
+date: 2021-01-22 22:30:00 +0300
 image: /assets/img/articles/dynamic-type/logo.png
 ---
 
@@ -63,7 +63,7 @@ Now knowing why it's important to pay attention adapting Dynamic Type, let's sum
 
 - **Make sure custom fonts are legible.** Custom typefaces can sometimes be difficult to read. Unless your app has a compelling need for a custom font, such as for branding purposes or to create an immersive gaming experience, it’s usually best to use the system fonts. If you do use a custom font, make sure it’s easy to read, even at small sizes.
 
-More is available on [uxdesigh](https://uxdesign.cc/guide-for-designing-better-mobile-apps-typography-5796495ef86f) and [HIG](https://developer.apple.com/design/human-interface-guidelines/accessibility/overview/text-size-and-weight/).
+More is available on [uxdesign](https://uxdesign.cc/guide-for-designing-better-mobile-apps-typography-5796495ef86f) and [HIG](https://developer.apple.com/design/human-interface-guidelines/accessibility/overview/text-size-and-weight/).
 
 <hr>
 
@@ -215,8 +215,15 @@ tableView.estimatedRowHeight = UIFontMetrics.default.scaledValue(for: 50)
 > <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/stackview.png" alt="Dynamic Type UI example">
 
 >~~~swift
-let stackView = UIStackView()
-stackView.axis = .horizontal
+override func traitCollectionDidChange(_ previousTraitCollection: UITraitCollection?) {
+    super.traitCollectionDidChange(previousTraitCollection)
+> 
+    if traitCollection.preferredContentSizeCategory.isAccessibilityCategory {
+        stackView.axis = .vertical
+    } else {
+        stackView.axis = .horizontal
+    }
+}
 ~~~
 
 >~~~swift
