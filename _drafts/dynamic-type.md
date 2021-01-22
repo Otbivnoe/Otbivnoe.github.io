@@ -21,41 +21,41 @@ image: /assets/img/articles/dynamic-type/logo.png
 
 *Sir*, put off your monocle, today we will talk about Dynamic Type!
 
-Accessibility plays a crucial role in all apps by far, so designing an app keep text size and layout in mind for clarity and readability.
+Accessibility plays a crucial role in all apps by far, so when you design an app make sure to keep text sizes and layout in mind for clarity and readability.
 
-In a nutshell, Dynamic Type lets you define a desired text size in iOS user settings and use it across apps that support it. Supporting this feature not only improve the user's experience but also train developers to write code for more dynamic interfaces - for instance, plenty of localization options.
+In a nutshell, Dynamic Type lets you define a desired text size in iOS user settings and use it across apps that support it. Supporting this feature not only improves the user’s experience but also trains developers to write code for more dynamic interfaces - for instance, plenty of localization options.
 
 Today I will try to cover the following topics:
 
-- Why it's so important to pay attention to it
+- Why it's so important to pay attention adapting Dynamic Type
 - Find out the best accessibility practices
 - UI adaptation for different text sizes
-- Check the available API for developers.
+- Check the available API for developers
 
 Without further ado, let's dive into the article!
 
 <hr>
 
-Developers write apps for users obviously and about **25 percent** of them use non-default text size. Having discovered these statistics reading the [PSPDFKit blog](https://pspdfkit.com/blog/2018/improving-dynamic-type-support/#user-adoption) and consider the fact Apple has moved the "Accessibility" settings one level up from the "General" tab in iOS 14 I was really surprised. So decided to add the metrics in the currently developing app and got the similiar results:
+Developers write apps for users obviously and about **25 percent** of them use non-default text sizes. I was really surprised seeing these these statistics reading the [PSPDFKit blog](https://pspdfkit.com/blog/2018/improving-dynamic-type-support/#user-adoption). And consider the fact Apple has moved the "Accessibility" settings one level up from the "General" tab in iOS 14, I decided to add metrics in my current app and got the similiar results:
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/assets/img/articles/dynamic-type/statistics-dark.png">
     <img class="dynamic-type-chart centered" srcset="/assets/img/articles/dynamic-type/statistics-light.png" alt="Dynamic Type statistics (chart)">
 </picture>
 
-Just for clarification, the **Accessibility fonts** is an additional group with even larger text sizes for users with accessibility needs. Usually, looking at the Apple apps for these fonts not only changing the text size but apply some layout changes - you will see it later.
+Just for clarification, the **Accessibility fonts** is an additional group with even larger text sizes for users with accessibility needs. Apple's apps is a great example of adapting these types of fonts. They do not only change text size, but apply some layout changes - you will see it later.
 
 <hr>
 
 ## Best practices
 
-Now knowing why it's important to pay attention to it, let's summarize the most important practices in my opinion:
+Now knowing why it's important to pay attention adapting Dynamic Type, let's summarize the most important practices in my opinion:
 
 - **Apple in its HIG recommends setting the minimum size for Body text to be 17pt.**
 
 - **As font size increases, avoid truncating text.** It’s best when people can simply scroll to see the same amount of text that’s visible at the default font size. Don’t truncate text unless people can open a separate view to read the rest of the content.
 
-- **Keep in mind the Accessibility fonts.** Group with even larger text sizes usually requires layout changes.
+- **Keep in mind the Accessibility fonts.** Fonts with even larger text sizes usually requires layout changes.
 
 - **Increase the size of meaningful glyphs as font size increases.** If you use glyphs to communicate important information, make sure the glyphs are easy to view at larger font sizes, too.
 
@@ -71,7 +71,7 @@ More is available on [uxdesigh](https://uxdesign.cc/guide-for-designing-better-m
 
 At first, it seems effortless adapting Dynamic Type. If you follow the auto-layout guidelines properly, avoid using constant heights for UI elements, it should work as expected without any additional coding. But there's a little number of users with accessibility fonts and you have to bear in mind them. 
 
-**Important to note** that at the time of writing this article iOS 14.3 is the most actual one and all further examples will be related to this version.
+**Important to note** that at the time of writing this article iOS 14.3 is the most recent one and all further examples will be related to this version.
 
 So let's discover how to adapt the Accessibility UI in the right way!
 
@@ -83,7 +83,7 @@ So let's discover how to adapt the Accessibility UI in the right way!
 
 You can observe the following changes:
 - Increased size of glyphs in conjunction with the text.
-- Removed avatars for getting extra space for large text size (**accessibility**).
+- Remove avatars for getting extra space for large text size (**accessibility**).
 - Thick separators (**accessibility**).
 
 It is worth mentioning, you should not get rid of images all-time in similar UI. In some cases, a user does pay more attention to an image for finding needed info rather than reading text. As I said, it's not as easy as it might seem :)
@@ -107,7 +107,7 @@ Further example with the Mail app will demonstrate not only adjusting the positi
 
 With the above in place, this time label (**"Yesterday"**) has an adjusted color. It looks a lot better even with such small changes. 
 
-**Keep in my the contrast of elements!**
+**Keep in mind the contrast of elements!**
 
 #### 4. Phone app - Contact tab 
 
@@ -121,7 +121,7 @@ Generally, I really appreciate that Apple adapts all their apps to Dynamic Type 
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/placeholders.png" alt="Dynamic Type UI example">
 
-You may have noticed some non-changing elements, namely the tab bar, and the navigation bar. Since generally, they are static-text elements and not represent the main content, they stay with the same size or just with minor changes. For native elements, Apple prepared placeholders. When a user holds a finger over an element, this placeholder appears. It's a win-win for developers and users, so keep in mind when planning to implement a custom tab bar or navigation controllers. 
+You may have noticed some non-changing elements, namely the tab bar, and the navigation bar. Since generally, they are static-text elements and do not represent the main content, they stay with the same size or just with minor changes. For native elements, Apple prepared placeholders. When a user holds a finger over an element, this placeholder appears. It's a win-win for developers and users, so keep in mind when planning to implement a custom tab bar or navigation controllers. 
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/photos.png" alt="Dynamic Type UI example">
 
@@ -133,20 +133,22 @@ p.s. it looks buggy, but my point is clear :)
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/examples/switcher.png" alt="Dynamic Type UI example">
 
-The last one - the most confusing. Recently discovered the differences in different iOS versions and no ideas either it's a bug in iOS 12 or just a regression in iOS 13. Or maybe just the awareness of better readability, who knows. I've tried to find an explanation for this behavior with no luck. So if you have information about this - please, [tell me](/contact).
+The last one - the most confusing. Recently I discovered the differences in iOS versions and no ideas either it's a bug in iOS 12 or just a regression in iOS 13. Or maybe just the awareness of better readability, who knows. I've tried to find an explanation for this behavior with no luck. So if you have information about this - please, [tell me](/contact).
 
 <hr>
 
-## It's time to dive into the practice! 
+## It's time to dive into practice! 
 
-I won't show step by step tutorial of implementing Dynamic Type in your app, but I'm going to cover some hacks and tips for simplifying this process. If it's really your first meeting with this topic I highly recommend to get familiar with [this small article](https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically) at first.
+I'm not going to show a step by step tutorial of how to implement Dynamic Type in your app. But I want to cover some hacks and tips for simplifying this process. If it's really your first meeting with this topic I highly recommend to get familiar with [this small article](https://developer.apple.com/documentation/uikit/uifont/scaling_fonts_automatically) at first.
 
 
--  As I said before, primarily is a collecting statistics - you need the [preferredContentSizeCategory](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory):
+-  Even you know the general statistics about different text sizes, it's a good tone to collect it by yourself as well. Just log the [Content Size Category](https://developer.apple.com/documentation/uikit/uiapplication/1623048-preferredcontentsizecategory) in your metrics service and see results after few weeks.
 
 > ~~~swift
 UIApplication.shared.preferredContentSizeCategory
 ~~~
+
+> With this info it's enough easy to "sell" it to your managers and start adopting it.
 
 - [SF Symbols](https://developer.apple.com/design/human-interface-guidelines/sf-symbols/overview/) were introduced during WWDC 2019 and it's a huge gift for us! Over 2,400 consistent, highly configurable symbols. Apple designed SF Symbols to integrate seamlessly with the San Francisco system font, so the symbols automatically ensure optical vertical alignment with text in all weights and sizes. 
 
@@ -179,7 +181,7 @@ Text("Interesting article").font(.largeTitle)
 
 > <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/readable-guides.png" alt="Dynamic Type UI example">
 
-> The width of readable area changes according user's preferred content size.
+> The width of readable area changes according to user's preferred content size.
 
 > ~~~swift
 let guide = view.readableContentGuide
@@ -188,7 +190,7 @@ label.leftAnchor.constraint(equalTo: guide.leftAnchor).isActive = true
 label.rightAnchor.constraint(equalTo: guide.rightAnchor).isActive = true
 ~~~
 
-> p.s. I haven't found a similar in SwiftUI, except padding with different values. So would appreciate if you tell me how to configure it right.
+> p.s. I haven't found a similar API in SwiftUI, except padding with different values. So would appreciate if you tell me how to configure it right.
 
 - In iOS 13 UIKit kicks off a prediction for initial traits of a view. UIKit guesses the likely traits for the view based on the context. So if you relied that `traitCollectionDidChange` will be called when a view is first added to the view hierarchy, it's not always true anymore. You can read the detailed article [here](https://useyourloaf.com/blog/predicting-size-classes-in-ios-13/).
 
@@ -269,7 +271,7 @@ For super-duper optimization fellows, try creating a shortcut for setting a need
 
 #### Accessibility Inspector
 
-The old best friend located at **Xcode > Open Developer Tool**. Great to know that you can't only change settings for the Simulator, but also for any connected iOS device.
+The old best friend located at **Xcode > Open Developer Tool**. Great to know you not only can change this settings for the Simulator, but also for any connected iOS device
 
 <img class="centered post-img" srcset="/assets/img/articles/dynamic-type/accessibility_inspector.png" alt="Screenshot of Xcode Accessibility Inspector">
 
