@@ -5,6 +5,13 @@
 
 .post-logo {
   border-radius: 20px;
+  margin-bottom: 30px;
+  background-color: $post-logo-background--light;
+}
+
+.post-img {
+  border-radius: 5px;
+  background-color: $post-logo-background--light;
 }
 
 .post-title {
@@ -71,7 +78,9 @@ table.text td {
   vertical-align: top;
 }
 
-p > code {
+p > code, 
+ul > code,
+li > code {
   background: $post-code-background--light;
   color: $post-code--light;
   font-family: inherit;
@@ -90,6 +99,29 @@ hr::after {
   letter-spacing: 12px;
 }
 
+.highlight {
+  overflow: auto;
+}
+
+.highlight table td {
+  padding: 5px;
+}
+
+div .highlight {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.highlight table pre {
+  margin: 0;
+}
+
+blockquote {
+  margin-left: 18px;
+  margin-block-end: 0px;
+  margin-inline-end: 0px;
+}
+
 @media (prefers-color-scheme: dark) {
   h1,
   h2,
@@ -106,12 +138,22 @@ hr::after {
   }
 
   p > code,
-  em > code {
+  em > code,
+  ul > code,
+  li > code {
     background: $post-code-background--dark;
     color: $post-code--dark;
   }
 
   hr::after {
     color: $post-text--dark;
+  }
+
+  .post-logo {
+    background-color: $post-logo-background--dark;
+  }
+
+  .post-img {
+    background-color: $post-logo-background--dark;
   }
 }

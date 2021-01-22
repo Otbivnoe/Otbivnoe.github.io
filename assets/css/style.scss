@@ -9,6 +9,12 @@ img {
   object-fit: contain;
 }
 
+.centered {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+}
+
 body {
   margin: 0;
   background-color: $content-background-color--light;
@@ -272,10 +278,6 @@ body {
 /* Media */
 
 @media (max-height: 800px) {
-  .sidebar__background {
-    top: 0;
-  }
-
   .sidebar__nav {
     top: 400px;
     width: 100%;
