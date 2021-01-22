@@ -8,8 +8,6 @@ image: /assets/img/articles/dynamic-type/logo.png
 
 <head>
 <style>
-    @import "colors";
-
     .dynamic-type-chart {
         margin-top: 40px;
         margin-bottom: 50px;
