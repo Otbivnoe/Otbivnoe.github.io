@@ -21,6 +21,7 @@ I am a professional iOS Developer since 2014, who specializes in building high-q
 
 ### Some of the projects where I've been involved
 
+- [DxCare](https://apps.apple.com/us/app/dx-care/id1540765494): Swift, Realm, Core Bluetooth, Protobuf
 - [Yandex Mail](https://apps.apple.com/us/app/yandex-mail-email-app/id4417854190): Objective-C, Swift, Core Data
 - [Pixelcraft](https://itunes.apple.com/us/app/pixelcraft-color-by-number-art/id1303437993?mt=8): Swift, MVVM+Routing, Firebase, AVFoundation
 - [BEATMix](https://itunes.apple.com/us/app/beatmix/id1227356223): Swift, MVVM, RxSwift, Realm, OpenGL, AVFoundation
