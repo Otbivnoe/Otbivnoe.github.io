@@ -10,7 +10,7 @@ I am a professional iOS Developer since 2014, who specializes in building high-q
 
 - Lead the [telegram channel](https://t.me/readaggregator) about programming
 - I maintain own open-source projects on [Github](https://github.com/otbivnoe)
-- Write posts (last one is 2018 year, but ready to continue writing)
+- Write articles about programming in Apple ecosystems
 - Help the community answering questions at [StackOverflow](https://stackoverflow.com/users/3733734/nikita-ermolenko?tab=profile)
 
 ### Positions
