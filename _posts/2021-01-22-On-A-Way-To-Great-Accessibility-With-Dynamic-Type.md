@@ -34,7 +34,7 @@ Without further ado, let's dive into the article!
 
 <hr>
 
-Developers write apps for users obviously and about **25 percent** of them use non-default text sizes. I was really surprised seeing these these statistics reading the [PSPDFKit blog](https://pspdfkit.com/blog/2018/improving-dynamic-type-support/#user-adoption). And consider the fact Apple has moved the "Accessibility" settings one level up from the "General" tab in iOS 14, I decided to add metrics in my current app and got the similiar results:
+Developers write apps for users obviously and about **25 percent** of them use non-default text sizes. I was really surprised seeing these statistics reading the [PSPDFKit blog](https://pspdfkit.com/blog/2018/improving-dynamic-type-support/#user-adoption). And consider the fact Apple has moved the "Accessibility" settings one level up from the "General" tab in iOS 14, I decided to add metrics in my current app and got the similiar results:
 
 <picture>
     <source media="(prefers-color-scheme: dark)" srcset="/assets/img/articles/dynamic-type/statistics-dark.png">
