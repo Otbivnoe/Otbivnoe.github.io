@@ -2,10 +2,11 @@
 layout: post
 title: "Make friends UITableView with layout margins"
 subtitle: "It will not surpise you that most iOS applications tend to have scrolling-style screens. Have a look at some of the screenshots I've prepared below - all of which contain scrollable content. One more similarity is layout margins, notice that all content is aligned to the left with the same inset - 16pt."
-date: 2021-02-17 10:30:00 +0300
+date: 2021-02-18 19:00:00 +0300
+image: /assets/img/articles/layout-margins/logo.png
 ---
 
-It will not surpise you that most iOS applications tend to have scrolling-style screens. Have a look at some of the screenshots I've prepared below - all of which contain scrollable content. One more similarity is layout margins, notice that all content is aligned to the left with the same inset - 16pt. It's important to keep this value consistent across the whole screen. I’ve tried and heard about many different approaches. Someone can use a base cell class with a container adjusted to a needed value. Other developers don't bother with this method and use a global constant for horizontal pinning instead. I've even saw an adjusted tableview's origin.x value, but a scroll area suffers this way...
+It will not surpise you that most iOS applications tend to have scrolling-style screens. Have a look at some of the screenshots I've prepared below - all of which contain scrollable content. One more similarity is layout margins, notice that all content is aligned to the left with the same inset - 16pt. It's important to keep this value consistent across the whole screen. I’ve tried and heard about many different approaches. Someone can use a base cell class with a container adjusted to a needed value. Other developers don't bother with this method and use a global constant for horizontal pinning instead. I've even seen an adjusted tableview's origin.x value, but a scroll area suffers this way...
 
 Today I'm going to talk about another approach - using layout margins! We will configure a particular inset value for a root view only and then pin all subviews to this guide.
 
@@ -35,7 +36,7 @@ view.directionalLayoutMargins = .init(top: 0, leading: 10, bottom: 0, trailing: 
 
 I've prepared two screenshots to better understand the differences between these options:
 
-<img class="centered post-img" srcset="/assets/img/articles/layout-margins/1.png" alt="">
+<img class="centered post-img" srcset="/assets/img/articles/layout-margins/viewRespects.png" alt="">
 
 
 Go over to the second step - configuring a table view. Since the table view has its own margins, it is necessary to preserve the root view's margins. We need to set these properties:
