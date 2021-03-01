@@ -1,15 +1,1 @@
-{% if jekyll.environment == 'production' %}
-    {% assign analytics-id = 'G-KYT151MSW5' %}
-{% else %}
-    {% assign analytics-id = 'G-CXHJY74M9D' %}
-{% endif %}
-
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{analytics-id}}"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', '{{analytics-id}}');
-</script>
+<script async defer data-domain="otbivnoe.ru" src="https://plausible.io/js/plausible.js"></script>
