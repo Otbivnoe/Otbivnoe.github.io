@@ -15,7 +15,7 @@ I am a professional iOS Developer since 2014, who specializes in building high-q
 
 ### Positions
 
-- [Experiment X](https://support.igloo.today/dxcare): Jul 2020 → current
+- [Igloo](https://support.igloo.today/dxcare): Jul 2020 → current
 - [Yandex](https://www.yandex.ru/): Apr 2018 → Jul 2020 (2 years, 4 months)
 - [Rosberry](https://rosberry.com/): Dec 2014 → Apr 2018 (3 years, 5 months) 
 
