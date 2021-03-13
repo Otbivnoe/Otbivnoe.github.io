@@ -3,6 +3,7 @@ layout: post
 title: "Dependency Injection for Property Wrappers"
 subtitle: "This article doesn't look like a long step-by-step tutorial, it's just a quick tip for a problem I faced recently. So I decided to share a non-obvious solution for me, maybe it will save some time for someone.  Email me if the article was useful to you :)"
 date: 2021-03-13 22:50:00 +0300
+badge: Quick tip
 image: /assets/img/articles/property-wrapper-di/logo.png
 image-dark: /assets/img/articles/property-wrapper-di/logo-dark.png
 ---

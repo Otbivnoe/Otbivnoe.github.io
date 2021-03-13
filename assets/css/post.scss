@@ -9,9 +9,17 @@
   background-color: $post-logo-background--light;
 }
 
-.post-img {
-  border-radius: 5px;
-  background-color: $post-logo-background--light;
+.post-date {
+  margin-right: 25px;
+}
+
+.post-first-line-container {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 10px;
+  height: 30px;
 }
 
 .post-title {
@@ -19,8 +27,9 @@
   margin-bottom: 35px;
 }
 
-.post-date {
-  margin-bottom: 10px;
+.post-img {
+  border-radius: 5px;
+  background-color: $post-logo-background--light;
 }
 
 h1,

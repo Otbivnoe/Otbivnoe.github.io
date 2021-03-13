@@ -180,9 +180,9 @@ body {
 /* Article */
 
 .article {
-  padding-top: 24px;
+  padding-top: 16px;
   padding-right: 32px;
-  padding-bottom: 24px;
+  padding-bottom: 32px;
   padding-left: 32px;
   background: $article-background--light;
   border-radius: 20px;
@@ -202,8 +202,7 @@ body {
 }
 
 .article-date {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
   color: $article-date--light;
   font-size: 0.75rem;
   font-weight: 300;
@@ -229,6 +228,15 @@ body {
   font-size: 1rem;
   font-weight: 300;
   -webkit-line-clamp: 3;
+}
+
+.article-first-line-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0px;
+  margin-bottom: 0;
+  height: 30px;
 }
 
 /* Footer */
@@ -294,6 +302,20 @@ body {
   color: $footer-sponsor-title--light;
   margin-bottom: 32px;
   margin-top: 0px;
+}
+
+/* Badge */
+
+.badge {
+  display: inline;
+  padding: 8px 12px;
+  border-radius: 20px;
+  border: 2px solid $red-color;
+  box-sizing: border-box;
+  font-size: 0.75rem;
+  font-weight: 700;
+  line-height: 0.875rem;
+  color: $badge-title--light;  
 }
 
 /* Media */
@@ -407,5 +429,9 @@ body {
 
   .footer__sponsor-title {
     color: $footer-sponsor-title--dark;
+  }
+
+  .badge {
+    color: $badge-title--dark;
   }
 }
