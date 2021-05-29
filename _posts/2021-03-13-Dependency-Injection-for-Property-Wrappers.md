@@ -83,5 +83,5 @@ class Onboarding {
 
 <hr>
 
-This article doesn't look like a long step-by-step tutorial, it's just a quick tip for a problem I faced recently. So I decided to share a non-obvious solution for me, maybe it will save some time for someone. [Let me know](https://twitter.com/iOtbivnoe) if the article was useful to you :)
+This article doesn't look like a long step-by-step tutorial, it's just a quick tip for a problem I faced recently. So I decided to share a non-obvious solution for me, maybe it will save some time for someone. [Let me know](https://twitter.com/{{ site.twitter_username }}) if the article was useful to you :)
  

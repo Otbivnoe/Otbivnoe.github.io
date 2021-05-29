@@ -10,4 +10,4 @@ I'd appreciate a [pull request](https://github.com/Otbivnoe/Otbivnoe.github.io/p
 
 ### Contacts
 - <a href="mailto:{{ site.email }}">Email me</a>
-- [Twitter @iOtbivnoe](https://twitter.com/iOtbivnoe)
+- [Twitter @{{ site.twitter_username }}](https://twitter.com/{{ site.twitter_username }})
