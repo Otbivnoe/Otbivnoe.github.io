@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+	<head>
+        {% include tracking.html %}
+        {% include og.html %}
+        <meta name="google-site-verification" content="zaPwNWj-BdHhd9VB7vXsh3rcBR9dA8RUH_dVAU8d-UQ" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="preconnect" href="https://fonts.gstatic.com" />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap"
+			rel="stylesheet"
+        />
+        <title>{% if page.title == nil %} {{ site.title }} {% else %} {{ page.title }} {% endif %}</title>
+		<link rel="icon" href="assets/img/favicon.ico" />
+        <link rel="stylesheet" href="/assets/css/style.css" />
+        <link rel="stylesheet" href="/assets/css/code-highlight.css" />
+        <link rel="stylesheet" href="/assets/css/post.css" /> 
+	</head>
+
+	<body>			
+        <div class="resume__content">         
+            <div class="resume__avatar-container">
+                <img src="/assets/img/avatar.png" class="resume__avatar" alt="Avatar">				
+            </div>
+            {{ content }}
+        </div>           
+	</body>
+</html>

@@ -319,6 +319,28 @@ body {
   color: $badge-title--light;  
 }
 
+/* Resume */
+
+.resume__content {
+  max-width: 1000px;
+  padding-right: 20%;
+  padding-left: 20%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+.resume__avatar-container {
+  display: block;
+  margin-top: 32px;
+  margin-bottom: 25px;
+  text-align: center;
+}
+
+.resume__avatar {
+  width: 130px;
+  height: 130px;
+}
+
 /* Media */
 
 @media (max-height: 800px) {
@@ -376,6 +398,18 @@ body {
     margin-top: 32px;
     margin-bottom: 25px;
     text-align: center;
+  }
+
+  .resume__content {
+    width: 94%;
+    max-width: auto;
+    padding-right: 3%;
+    padding-left: 3%;
+  }
+
+  .resume__avatar {
+    width: 100px;
+    height: 100px;
   }
 }
 

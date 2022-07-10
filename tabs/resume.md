@@ -1,7 +1,7 @@
 ---
 title: Resume
 permalink: /resume
-layout: default
+layout: resume
 ---
 
 I am a professional iOS Developer since 2014, who specializes in building high-quality native applications. Application development is not just my job, it's also my hobby and passion. I carry out all work efficiently and on time. Always glad to find new challenges and ways to surpass clients' expectations.
@@ -18,20 +18,25 @@ I am a professional iOS Developer since 2014, who specializes in building high-q
 - Help the community answering questions at [StackOverflow](https://stackoverflow.com/users/3733734/nikita-ermolenko?tab=profile)
 
 ### Experience
+- [UpTeam](https://upteam.com): May 2022 → Jul 2022
+<br> 
+Took part as a full-time contractor for developing the [Nexar Smart Dash Cams](https://www.getnexar.com) in the SDK team. Integrated a neural-model for on-device processing by analyzing traffic images from a DVR.
+<br> 
+*Swift, CoreML, Object Detection, Vision, YOLO*
 
-- [Igloo](https://iglootest.ru): Jul 2020 → Apr 2022 (1 year, 10 months) 
+- [Igloo](https://iglootest.ru): Jul 2020 → Apr 2022
 <br> 
 Joined a biotech-startup as a main senior developer. Implemented the whole functionality of 2 apps from scratch for med and vet applications. Actively communicated with designers, managers and hardware developers.
 <br>
 *Swift, RxSwift, Realm, Core Bluetooth, Protobuf*
 
-- [Yandex](https://apps.apple.com/us/app/yandex-mail-email-app/id441785419): Apr 2018 → Jul 2020 (2 years, 4 months) 
+- [Yandex](https://apps.apple.com/us/app/yandex-mail-email-app/id441785419): Apr 2018 → Jul 2020
 <br> 
 Used to develop a client for Yandex mail as a middle developer. In particular improved the accessibility of the app by implementing the dynamic type and dark theme across the app. Worked out on features from scrath as a head of these features: communicated with managers, developers and designers a lot.
 <br>
 *Objective-C, Swift, Core Data*
 
-- [Rosberry](https://rosberry.com/): Dec 2014 → Apr 2018 (3 years, 5 months) 
+- [Rosberry](https://rosberry.com/): Dec 2014 → Apr 2018
 <br>
 Been involved in many different projects at the outsource company as junior developer: music apps, workout app, booking-analolgue and so on.
     - [Pixelcraft](https://itunes.apple.com/us/app/pixelcraft-color-by-number-art/id1303437993?mt=8): Swift, MVVM+Routing, Firebase, AVFoundation
