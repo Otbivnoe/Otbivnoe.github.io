@@ -15,9 +15,10 @@ I am a professional iOS Developer since 2014, who specializes in building high-q
 
 ### Experience
 
-- [Igloo](https://iglootest.ru): Jul 2020 → Apr 2022 (1 year, 10 months)
-- [Yandex](https://www.yandex.ru/): Apr 2018 → Jul 2020 (2 years, 4 months)
-- [Rosberry](https://rosberry.com/): Dec 2014 → Apr 2018 (3 years, 5 months) 
+- [UpTeam](https://upteam.com): May 2022 → Jul 2022
+- [Igloo](https://iglootest.ru): Jul 2020 → Apr 2022
+- [Yandex](https://www.yandex.ru/): Apr 2018 → Jul 2020
+- [Rosberry](https://rosberry.com/): Dec 2014 → Apr 2018
 
 ### Some of the projects where I've been involved
 
