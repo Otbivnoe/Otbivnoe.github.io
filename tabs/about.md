@@ -15,6 +15,7 @@ I am a professional iOS Developer since 2014, who specializes in building high-q
 
 ### Experience
 
+- [June](https://junehomes.com/about-us): Aug 2022 → current
 - [UpTeam](https://upteam.com): May 2022 → Jul 2022
 - [Igloo](https://iglootest.ru): Jul 2020 → Apr 2022
 - [Yandex](https://www.yandex.ru/): Apr 2018 → Jul 2020
@@ -22,6 +23,7 @@ I am a professional iOS Developer since 2014, who specializes in building high-q
 
 ### Some of the projects where I've been involved
 
+- [June](https://itunes.apple.com/us/app/id1483377835): Swift, SwiftUI, Swift Concurrency, Realm 
 - [Igloo](https://igloovet.ru): Swift, RxSwift, Realm, Core Bluetooth, Protobuf
 - [Yandex Mail](https://apps.apple.com/us/app/yandex-mail-email-app/id441785419): Objective-C, Swift, Core Data
 - [Pixelcraft](https://itunes.apple.com/us/app/pixelcraft-color-by-number-art/id1303437993?mt=8): Swift, MVVM+Routing, Firebase, AVFoundation
