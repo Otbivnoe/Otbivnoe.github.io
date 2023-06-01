@@ -4,35 +4,47 @@ permalink: /resume
 layout: resume
 ---
 
-I am a professional iOS Developer since 2014, who specializes in building high-quality native applications. Application development is not just my job, it's also my hobby and passion. I carry out all work efficiently and on time. Always glad to find new challenges and ways to surpass clients' expectations.
+# Nikita Ermolenko
+
+As an accomplished iOS Developer since 2014, I am highly skilled in crafting top-notch native applications. Application development is not merely my profession, but also my personal hobby and lifelong passion. With a strong commitment to delivering excellence, I consistently execute tasks efficiently and punctually. I thrive on embracing new challenges and exceeding clients' expectations.
 
 ### Education 
 
-2011 → 2015 Bachelor's degree (Faculty of Mathematics and Information Technology) in [Dostoevsky Omsk State University](https://omsu.ru/about/structure/general/omp/eng/)
+2011 → 2015 Bachelor's degree (Faculty of Mathematics and Information Technology) in [Omsk State University](https://omsu.ru/about/structure/general/omp/eng/)
 
 ### Professional hobbies
 
-- Lead the [telegram channel](https://t.me/readaggregator) about programming
-- I maintain own open-source projects on [Github](https://github.com/otbivnoe)
-- Write [articles](/) about programming in Apple ecosystems
-- Help the community answering questions at [StackOverflow](https://stackoverflow.com/users/3733734/nikita-ermolenko?tab=profile)
+- Led a programming [Telegram channel](https://t.me/readaggregator), curating valuable content for a diverse audience.
+- Maintained own open-source projects on [Github](https://github.com/otbivnoe), showcasing continuous learning and contribution to the developer community.
+- Authored [articles](/) on programming in Apple ecosystems, providing practical insights for fellow developers.
+- Actively assisted the community by answering programming questions on [Stack Overflow](https://stackoverflow.com/users/3733734/nikita-ermolenko?tab=profile).
 
 ### Experience
+- [June](https://junehomes.com/about-us): Aug 2022 → current
+<br>
+Led an app refactoring project from UIKit to SwiftUI as the main developer in a real-estate startup. This initiative resulted in improved user experience and increased development efficiency.
+<br>
+Contributed as a member of the design team, collaborating closely with colleagues to build components in Figma. Played a key role in shaping the user experience by adjusting the user flow.
+<br>
+*Swift, Realm, SwiftUI, Swift Concurrency*
+
 - [UpTeam](https://upteam.com): May 2022 → Jul 2022
 <br> 
-Took part as a full-time contractor for developing the [Nexar Smart Dash Cams](https://www.getnexar.com) in the SDK team. Integrated a neural-model for on-device processing by analyzing traffic images from a DVR.
+As a full-time contractor, I played an integral role in the development of the [Nexar Smart Dash Cams](https://www.getnexar.com) within the SDK team. A key accomplishment was integrating a neural model into the device, enabling on-device processing and analysis of traffic images captured by the DVR.
 <br> 
 *Swift, CoreML, Object Detection, Vision, YOLO*
 
 - [Igloo](https://iglootest.ru): Jul 2020 → Apr 2022
 <br> 
-Joined a biotech-startup as a main senior developer. Implemented the whole functionality of 2 apps from scratch for med and vet applications. Actively communicated with designers, managers and hardware developers.
+Joined the biotech startup as main senior developer. I played a pivotal role in developing two applications from the ground up, catering to medical and veterinary applications. I was responsible for implementing the entire functionality of these apps, ensuring their seamless operation and user-friendly experience.
+<br> 
+In addition to my development responsibilities, I actively engaged in cross-functional collaboration with hardware developers. This open communication approach allowed for effective coordination and alignment across different teams, contributing to the overall success of the projects.
 <br>
 *Swift, RxSwift, Realm, Core Bluetooth, Protobuf*
 
 - [Yandex](https://apps.apple.com/us/app/yandex-mail-email-app/id441785419): Apr 2018 → Jul 2020
 <br> 
-Used to develop a client for Yandex mail as a middle developer. In particular improved the accessibility of the app by implementing the dynamic type and dark theme across the app. Worked out on features from scrath as a head of these features: communicated with managers, developers and designers a lot.
+As a middle developer, I made significant contributions to the development of a client for Yandex Mail. One of my key achievements was enhancing the app's accessibility by successfully implementing dynamic type and a dark theme across its interface. Serving as the head of these features, I collaborated extensively with managers, developers, and designers to ensure their successful execution.
 <br>
 *Objective-C, Swift, Core Data*
 
@@ -57,3 +69,8 @@ Been involved in many different projects at the outsource company as junior deve
 {% for post in site.posts | sort: "date" %}
 - [{{ post.title }}]({{ post.url }}). {{ post.subtitle }}
 {% endfor %}
+
+### Contacts 
+
+- <a href="mailto:{{ site.email }}">Email me</a>
+- [Twitter](https://twitter.com/{{ site.twitter_username }})
