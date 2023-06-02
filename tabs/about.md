@@ -4,7 +4,7 @@ permalink: /about
 layout: default
 ---
 
-I am a professional iOS Developer since 2014, who specializes in building high-quality native applications. Application development is not just my job, it's also my hobby and passion. I carry out all work efficiently and on time. Always glad to find new challenges and ways to surpass clients' expectations.
+As an accomplished iOS Developer since 2014, I am highly skilled in crafting top-notch native applications. Application development is not merely my profession, but also my personal hobby and lifelong passion. With a strong commitment to delivering excellence, I consistently execute tasks efficiently and punctually. I thrive on embracing new challenges and exceeding clients' expectations.
 
 ### Professional hobbies
 
@@ -18,7 +18,7 @@ I am a professional iOS Developer since 2014, who specializes in building high-q
 - [June](https://junehomes.com/about-us): Aug 2022 → current
 - [UpTeam](https://upteam.com): May 2022 → Jul 2022
 - [Igloo](https://iglootest.ru): Jul 2020 → Apr 2022
-- [Yandex](https://www.yandex.ru/): Apr 2018 → Jul 2020
+- [Yandex](https://yandex.com/company/): Apr 2018 → Jul 2020
 - [Rosberry](https://rosberry.com/): Dec 2014 → Apr 2018
 
 ### Some of the projects where I've been involved

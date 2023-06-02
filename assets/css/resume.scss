@@ -1,0 +1,64 @@
+---
+---
+
+@import "colors";
+
+h3 {
+    margin-top: 2.2rem;
+    margin-bottom: 0.2rem;
+}
+
+.resume-name {
+    margin-bottom: 0px;
+}
+
+.resume-position {
+    color: $resume-position--light;
+}
+
+.resume__content {
+    max-width: 1000px;
+    padding-right: 20%;
+    padding-left: 20%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.resume__avatar-container {
+    display: block;
+    margin-top: 32px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.resume__avatar {
+    width: 130px;
+    height: 130px;
+}
+  
+@media (prefers-color-scheme: dark) {
+    .resume-position {
+        color: $resume-position--dark;
+    }   
+}
+
+@media print {
+    .resume__content {
+        padding-right: 4%;
+        padding-left: 4%;
+    }    
+}
+
+@media (max-width: 800px) {
+    .resume__content {
+        width: 94%;
+        max-width: auto;
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+
+    .resume__avatar {
+        width: 100px;
+        height: 100px;
+    }
+} 

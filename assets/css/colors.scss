@@ -3,6 +3,12 @@ $red-color: #d12929;
 $content-background-color--light: white;
 $content-background-color--dark: #141414;
 
+$header--light: black;
+$header--dark: white;
+
+$text--light: #4d4d4d;
+$text--dark: #bdbdbd;
+
 // Sidebar
 
 $sidebar-background--light: #f4f4f4;
@@ -39,12 +45,6 @@ $article-description--dark: #bdbdbd;
 $post-logo-background--light: #f4f4f4;
 $post-logo-background--dark: #afb0b1;
 
-$post-header--light: black;
-$post-header--dark: white;
-
-$post-text--light: #4d4d4d;
-$post-text--dark: #bdbdbd;
-
 $post-code--light: #4d4d4d;
 $post-code--dark: #de6b18;
 
@@ -69,3 +69,8 @@ $footer-sponsor-title--dark: white;
 
 $badge-title--light: black;
 $badge-title--dark: white;
+
+// Resume
+
+$resume-position--light: black;
+$resume-position--dark: white;
