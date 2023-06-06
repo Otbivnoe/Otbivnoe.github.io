@@ -6,25 +6,32 @@ layout: resume
 
 <h1 class="resume-name">Nikita Ermolenko</h1>
 
-As an accomplished iOS Developer since 2014, I am highly skilled in crafting top-notch native applications. Application development is not merely my profession, but also my personal hobby and lifelong passion. With a strong commitment to delivering excellence, I consistently execute tasks efficiently and punctually. I thrive on embracing new challenges and exceeding clients' expectations.
+<br>
 
+### Summary
 
-### Education 
+<ul>
+    <li>
+        Highly experienced Senior iOS Developer with 9 years in the field, adept at crafting top-notch native applications.
+    </li>
+    <li>
+        Meticulous attention to detail in creating beautiful and intuitive UI designs. I firmly believe that a well-crafted user interface can greatly enhance the overall user experience.
+    </li>
+    <li>
+        My passion for iOS development extends beyond coding, as I actively contribute to the developer community through my writing in a dedicated Telegram channel. I share practical insights and valuable content about the latest technologies. 
+    </li>
+    <li>
+        Passionate mentor for junior developers, dedicated to fostering their growth and success. I find immense fulfillment in sharing my knowledge and experience with aspiring developers.
+    </li>
+    <li>
+        I have a curiosity and a passion for staying at the forefront of the ever-evolving iOS development landscape. Actively researching and experimenting with emerging trends and best practices.
+    </li>
+</ul>
 
-2011 → 2015 Bachelor's degree (Faculty of Mathematics and Information Technology) in [Omsk State University](https://omsu.ru/about/structure/general/omp/eng/)
-
-
-### Professional hobbies
-
-- Led a programming [Telegram channel](https://t.me/readaggregator), curating valuable content for a diverse audience.
-- Maintained own open-source projects on [Github](https://github.com/otbivnoe), showcasing continuous learning and contribution to the developer community.
-- Authored [articles](/) on programming in Apple ecosystems, providing practical insights for fellow developers.
-- Actively assisted the community by answering programming questions on [Stack Overflow](https://stackoverflow.com/users/3733734/nikita-ermolenko?tab=profile).
-
+<hr>
 
 ### Experience
 
-<ul>
 {% 
 include experience.html 
 company = "June" 
@@ -33,12 +40,28 @@ position = "Senior iOS Developer"
 time = "Aug 2022 → Present"
 city = "Full Remote"
 description = "
-Led an app refactoring project from UIKit to SwiftUI as the main developer in a real-estate startup. This initiative resulted in improved user experience and increased development efficiency.
-<br>
-Contributed as a member of the design team, collaborating closely with colleagues to build components in Figma. Played a key role in shaping the user experience by adjusting the user flow.
+<ul>
+    <li>
+        Led an app refactoring project from UIKit to SwiftUI as the main developer in a proptech startup, resulting in improved user experience and increased development efficiency.
+    </li>
+    <li>
+        Collaborated closely with the design team to build components in Figma, shaping the user experience by adjusting the user flow and ensuring seamless integration of the new UI framework.
+    </li>
+</ul>
+<p>Funding Information:</p>
+<ul>
+    <li>
+        Series B-funded proptech startup, securing $50 million in investments.
+    </li>
+    <li>
+        Read more about the funding on <a href='https://techcrunch.com/2021/09/22/softbank-and-demi-lovato-back-june-homes-a-proptech-startup-emerging-from-stealth-with-50m-in-funding/'>TechCrunch</a>.
+    </li>
+</ul>
 "
-stack = "Swift, Realm, SwiftUI, Swift Concurrency"
+stack = "Swift, Realm, SwiftUI, Swift Concurrency, Fastlane"
 %}
+
+<br>
 
 {% 
 include experience.html 
@@ -48,10 +71,19 @@ position = "Senior iOS SDK Developer"
 time = "May 2022 → Jul 2022 (startup faced the financial problems)"
 city = "Full Remote"
 description = "
-As a full-time contractor, I played an integral role in the development of the <a href='https://www.getnexar.com'>Nexar Smart Dash Cams</a> within the SDK team. A key accomplishment was integrating a neural model into the device, enabling on-device processing and analysis of traffic images captured by the DVR.
+<ul>
+    <li>
+        Played an integral role in the development of the <a href='https://www.getnexar.com'>Nexar Smart Dash Cams</a> within the SDK team.
+    </li>
+    <li>
+        Successfully integrated a neural model into the device, enabling on-device processing and analysis of traffic images captured by the DVR.
+    </li>
+</ul>
 "
 stack = "Swift, CoreML, Object Detection, Vision, YOLO"
 %}
+
+<br>
 
 {% 
 include experience.html 
@@ -61,12 +93,22 @@ position = "Senior iOS Developer"
 time = "Jul 2020 → Apr 2022"
 city = "Saint-Petersburg, Russia"
 description = "
-Joined the biotech startup as main senior developer. I played a pivotal role in developing two applications from the ground up, catering to medical and veterinary applications. I was responsible for implementing the entire functionality of these apps, ensuring their seamless operation and user-friendly experience.
-<br> 
-In addition to my development responsibilities, I actively engaged in cross-functional collaboration with hardware developers. This open communication approach allowed for effective coordination and alignment across different teams, contributing to the overall success of the projects.
+<ul>
+    <li>
+        Joined a biotech startup as the main senior developer and developed two applications from the ground up, catering to medical and veterinary applications.
+    </li>
+    <li>
+        Ensured seamless operation and user-friendly experience by implementing the entire functionality of the applications.
+    </li>
+    <li>
+        Actively engaged in cross-functional collaboration with hardware developers, resulting in effective coordination and successful project outcomes.
+    </li>
+</ul>
 "
-stack = "Swift, RxSwift, Realm, Core Bluetooth, Protobuf"
+stack = "Swift, RxSwift, Realm, Core Bluetooth, Protobuf, Fastlane"
 %}
+
+<br>
 
 {% 
 include experience.html 
@@ -76,10 +118,22 @@ position = "iOS Developer"
 time = "Apr 2018 → Jul 2020"
 city = "Saint-Petersburg, Russia"
 description = "
-I made significant contributions to the development of a client for Yandex Mail. One of my key achievements was enhancing the app's accessibility by successfully implementing dynamic type and a dark theme across its interface. Serving as the head of these features, I collaborated extensively with managers, developers, and designers to ensure their successful execution.
+<ul>
+    <li>
+        Made significant contributions to the development of Yandex Mail by enhancing the app's accessibility: implemented Dynamic Type and a Dark Theme across its interface.
+    </li>
+    <li>
+        Mentored junior developers, providing guidance and support in their professional growth.
+    </li>
+    <li>
+        Led the development of key features as the head, collaborating closely with managers, developers, and designers.
+    </li>
+</ul>
 "
 stack = "Objective-C, Swift, Core Data"
 %}
+
+<br>
 
 {% 
 include experience.html 
@@ -93,8 +147,23 @@ Been involved in many different projects at the outsource company as junior deve
 "
 stack = "Swift, RxSwift, ReactiveCocoa, Viper, CoreData, Objective-C"
 %}
-</ul>
 
+<hr>
+
+### Professional hobbies
+
+- Led a programming [Telegram channel](https://t.me/readaggregator), curating valuable content for a diverse audience.
+- Maintained own open-source projects on [Github](https://github.com/otbivnoe), showcasing continuous learning and contribution to the developer community.
+- Authored [articles](/) on programming in Apple ecosystems, providing practical insights for fellow developers.
+- Actively assisted the community by answering programming questions on [Stack Overflow](https://stackoverflow.com/users/3733734/nikita-ermolenko?tab=profile).
+
+<hr>
+
+### Education 
+
+2011 → 2015 Bachelor's degree (Faculty of Mathematics and Information Technology) in [Omsk State University](https://omsu.ru/about/structure/general/omp/eng/)
+
+<hr>
 
 ### Open Source Projects
 
@@ -104,13 +173,15 @@ stack = "Swift, RxSwift, ReactiveCocoa, Viper, CoreData, Objective-C"
  - [Framezilla](https://github.com/Otbivnoe/Framezilla): Elegant library that wraps working with frames with a nice chaining syntax.
  - [Framer](https://github.com/Otbivnoe/Framer): Framer is a good framework that wraps working with frames with a nice chaining syntax.
 
+<hr>
 
 ### Articles
 
 {% for post in site.posts | sort: "date" %}
-- [{{ post.title }}]({{ post.url }}). {{ post.subtitle }}
+- [{{ post.title }}]({{ post.url }})
 {% endfor %}
 
+<hr>
 
 ### Contacts 
 
