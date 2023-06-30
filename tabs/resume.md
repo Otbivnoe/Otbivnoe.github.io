@@ -58,7 +58,7 @@ description = "
     </li>
 </ul>
 "
-stack = "Swift, Realm, SwiftUI, Swift Concurrency, Fastlane"
+stack = "Swift, Realm, SwiftUI, Combine, Async / Await, Fastlane"
 %}
 
 <br>
