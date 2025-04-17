@@ -4,6 +4,6 @@
     "less.validate": false,
 
     "editor.codeActionsOnSave": {
-        "source.fixAll.stylelint": true
+        "source.fixAll.stylelint": "explicit"
     },
 }
