@@ -186,4 +186,4 @@ stack = "Swift, RxSwift, ReactiveCocoa, Viper, CoreData, Objective-C"
 ### Contacts 
 
 - <a href="mailto:{{ site.email }}">Email me</a>
-- [Twitter](https://twitter.com/{{ site.twitter_username }})
+- [X](https://x.com/{{ site.x_username }})

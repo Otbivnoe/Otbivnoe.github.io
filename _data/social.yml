@@ -1,6 +1,6 @@
-- img:  /assets/img/side-menu/social/twitter.png
-  link: https://twitter.com/otbivnoe
-  title: Twitter
+- img:  /assets/img/side-menu/social/x.png
+  link: https://x.com/otbivnoe
+  title: X
 
 - img:  /assets/img/side-menu/social/stackoverflow.png
   link: https://stackoverflow.com/users/3733734/nikita-ermolenko
@@ -14,6 +14,6 @@
   link: /feed.xml
   title: RSS
 
-- img:  /assets/img/side-menu/social/soul.png
+- img:  /assets/img/side-menu/social/tg.png
   link: https://t.me/readaggregator
   title: Readaggregator

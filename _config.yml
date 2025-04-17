@@ -26,7 +26,7 @@ baseurl: /
 url: https://otbivnoe.ru
 timezone: Europe/Moscow
 
-twitter_username: otbivnoe
+x_username: otbivnoe
 github_username:  otbivnoe
 
 encoding: UTF-8

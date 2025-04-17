@@ -93,4 +93,4 @@ That's It! Now you're able to write a simple command `clear` to flush the consol
 
 <hr>
 
-I would happy to hear a better way or even a native way of clearing a console if it exists. So [let me know](https://twitter.com/{{ site.twitter_username }}) if you know anything about it.
+I would happy to hear a better way or even a native way of clearing a console if it exists. So [let me know](https://x.com/{{ site.x_username }}) if you know anything about it.
