@@ -298,14 +298,41 @@ hr::after {
   text-align: center;
   background: $footer-background--light;
   border-radius: 20px;
+
+  &::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 20px;
+    box-shadow:
+      0 0 8px 2px #00eaff,
+      0 0 16px 4px #8f00ff;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+  }
+
+  &:hover::before {
+    opacity: 1;
+  }
 }
 
 .footer__readaggregator {
-  margin-top: 30px;
+  display: block;
+  margin-top: 60px;
   padding-top: 25px;
   padding-bottom: 24px;
   padding-right: 32px;
   padding-left: 32px;  
+  position: relative;
+  text-decoration: none;
+}
+
+.footer__readaggregator:hover,
+.footer__readaggregator:focus {
+  text-decoration: none;
 }
 
 .footer__readaggregator-title {
@@ -504,5 +531,13 @@ hr::after {
 
   .badge {
     color: $badge-title--dark;
+  }
+
+  .footer__readaggregator::before {
+    border-color: #00eaff;
+    box-shadow:
+      0 0 16px 4px #00eaff,
+      0 0 32px 8px #8f00ff;
+    opacity: 0.9;
   }
 }
