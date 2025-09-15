@@ -15,7 +15,8 @@ As an accomplished iOS Developer since 2014, I am highly skilled in crafting top
 
 ### Experience
 
-- [June](https://junehomes.com/about-us): Aug 2022 → current
+- [Salmon](https://salmon.ph): Nov 2023 → current
+- [June](https://junehomes.com/about-us): Aug 2022 → current (part-time)
 - [UpTeam](https://upteam.com): May 2022 → Jul 2022
 - [Igloo](https://iglootest.ru): Jul 2020 → Apr 2022
 - [Yandex](https://yandex.com/company/): Apr 2018 → Jul 2020
